@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testuojame Forma</title>
+  </head>
+  <body>
+    <h1>Testuojame Forma</h1>
+    <header>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacts</li>
+      </ul>
+    </header>
+    <section>
+      <h2>Registration form</h2>
+              <form action="confirm.html" method="get">
+          <input type="text" name="username" value="" placeholder="User Name" /><br />
+          <label>User password</label><br />
+          <input type="password" name="password" value="" placeholder="User password" maxlength="25" /><br />
+
+          <input type="radio" name="gender" value="male" />Male<br />
+          <input type="radio" name="gender" value="female" checked="1" />Female<br />
+          <input type="radio" name="gender" value="other" />Other<br />
+          Ivesk savo skelbima<br />
+          <textarea rows="5" cols="100"></textarea><br />
+
+          <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="submit" value="Registration" />
+        </form>
+      <a href="http://google.com"><button>Pasitikrinti Google</button></a>
+
+      <h2>Rask Google informacija</h2>
+      <form action="http://google.com" method="get">
+        <input type="text" name="q" />
+        <button type="submit">Ieskoti</button>
+      </form>
+    </section>
+  </body>
+  <footer>
+
+  </footer>
+</html>
