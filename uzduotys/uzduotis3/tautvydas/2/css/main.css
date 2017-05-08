@@ -1,0 +1,68 @@
+/*
+My main colors
+pink:   rgb(240, 75, 249);
+*/
+
+h1 {
+  color: red;
+  text-align: center;
+}
+body {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(228, 228, 221);
+}
+#header {
+  height: 50px;
+  background-color: rgb(240, 75, 249);
+  margin-bottom: 20px;
+}
+#navigation ul li {
+  display: inline-block;
+  width: 22%;
+  line-height: 48px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+#navigation {
+  width: 69%;
+  display: inline-block;
+}
+#search {
+  width: 22%;
+  display: inline-block;
+  float: right;
+  padding-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+#content {
+  width: 78%;
+  margin-right: 2%;
+  float: left;
+  background-color: #fff;
+}
+#sidebar {
+  padding: 1%;
+  width: 18%;
+  float: left;
+  background-color: rgb(240, 75, 249);
+}
+#sidebar ul {
+  padding-left: 25px;
+}
+.clear-float {
+  clear: both;
+}
+#footer {
+  margin-top: 20px;
+  background-color: #fff;
+}

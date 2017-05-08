@@ -8,10 +8,12 @@ body {
   width: 970px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
 }
 h1 {
   text-align: center;
   margin: 40px 0;
+  font-family: 'Merriweather', george serif;
 }
 h2 {
   margin: 0;
@@ -33,10 +35,19 @@ article {
 .clear-float {
   clear: both;
 }
-.pav-1 {
+.pav-1, .pav-2, .pav-3  {
   width: 90px;
-  background-color: red;
   position: absolute;
   top: 0px;
   right: 0;
+  text-align: center;
+}
+.pav-1 {
+  background-color: red;
+}
+.pav-2 {
+  background-color: orange;
+}
+.pav-3 {
+  background-color: rgb(203, 222, 51);
 }
