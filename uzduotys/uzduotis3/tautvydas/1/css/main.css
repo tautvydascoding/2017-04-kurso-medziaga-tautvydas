@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+h2 {
+  margin: 0;
+}
+
+article {
+  position: relative;
+  width: 31%;
+  float: left;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  padding: 30px 10px 10px 10px ;
+  background-color: rgb(224, 224, 224);
+}
+.center-article {
+  margin: 0 2%;
+}
+/* butinas naudojant Float */
+.clear-float {
+  clear: both;
+}
+.pav-1 {
+  width: 90px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
