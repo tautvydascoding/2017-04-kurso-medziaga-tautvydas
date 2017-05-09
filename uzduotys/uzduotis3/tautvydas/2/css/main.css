@@ -61,6 +61,7 @@ a {
 }
 #wrapper {
   overflow: hidden;
+  width: 100%;
 }
 #sidebar {
   padding: 1%;
@@ -79,4 +80,60 @@ a {
 #footer {
   margin-top: 20px;
   background-color: #fff;
+  height: 40px;
+  padding: 2%;
+}
+/* IDEA: small desktop */
+@media (max-width: 999px) {
+  body {
+    width: auto;
+  }
+  #sidebar {
+    display: none;
+  }
+  #content {
+    width: 100%;
+  }
+  #search {
+    width: 31%;
+  }
+}
+/* IDEA: tablet */
+@media (max-width: 767px) {
+  #navigation {
+    width: 100%;
+  }
+  #search {
+    width: 100%;
+  }
+  #search form {
+    width: 216px;
+    margin-left: auto; /* centruojame Search lauka */
+    margin-right: auto;
+  }
+}
+@media (max-width: 425px) {
+  #sidebar {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  #navigation ul li {
+    display: block;
+  }
+  #navigation ul {
+    width: 95px;
+    margin-left: auto; /* centruojame Search lauka */
+    margin-right: auto;
+  }
+  #header {
+    height: 300px;
+  }
+}
+
+
+
+.center-element {
+  margin-left: auto; /* centruojame Search lauka */
+  margin-right: auto;
 }
