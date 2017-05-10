@@ -3,7 +3,15 @@
 header {
   background-color: #9BCE0B;
 }
-.nav-bar {
-  background-color: #F7F5D8;
-  min-height: 400px;
+article {
+      background-color: #EAEBED;
+      min-height: 400px;
+      padding-left: 20px;
+}
+.sides {
+      background-color: #F7F5D8;
+      min-height: 400px;
+}
+.no-padding {
+  padding: 0;
 }
