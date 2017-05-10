@@ -3,15 +3,19 @@
 }
 .navigation {
   background-color: #D5E8D4;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
 }
-h1 {
-  color: red;
+.container {
+  overflow: hidden;
 }
-header, .footer {
+.header, .footer {
   background-color: #9BCE0B;
+  min-height: 150px;
 }
 .content {
   background-color: #F4F4F4;
+  min-height: 300px;
 }
 
 /*  -- naudingos -- */
