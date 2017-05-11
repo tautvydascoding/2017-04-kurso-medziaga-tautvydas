@@ -1,0 +1,28 @@
+.navigation, .wrapper {
+  min-height: 400px;
+}
+.navigation {
+  background-color: #D5E8D4;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
+.container {
+  overflow: hidden;
+}
+.header, .footer {
+  background-color: #9BCE0B;
+  min-height: 150px;
+}
+.content {
+  background-color: #F4F4F4;
+  min-height: 300px;
+}
+
+/*  -- naudingos -- */
+.no-padding {
+  padding: 0;
+}
+.p-15 {   padding: 15px; }
+.p-20 {   padding: 20px; }
+.m-15 {   margin: 15px; }
+.m-20 {   margin: 20px; }

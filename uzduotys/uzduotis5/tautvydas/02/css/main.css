@@ -1,0 +1,25 @@
+
+body {
+  font-family: george, verdona sans-serif;
+}
+header, footer {
+  background-color: #9BCE0B;
+}
+article {
+      background-color: #EAEBED;
+      min-height: 400px;
+      padding-left: 20px;
+}
+.sides {
+      background-color: #F7F5D8;
+      min-height: 400px;
+}
+
+/*  -- naudingos -- */
+.no-padding {
+  padding: 0;
+}
+.p-15 {   padding: 15px; }
+.p-20 {   padding: 20px; }
+.m-15 {   margin: 15px; }
+.m-20 {   margin: 20px; }
