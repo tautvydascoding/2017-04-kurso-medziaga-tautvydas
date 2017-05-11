@@ -6,11 +6,20 @@ header {
 h2 {
   padding: 20px;
 }
-.navigation {
+.navigation, .ads {
     min-height: 200px;
     background-color: #9BCE0B;
+    margin-bottom: 10px;
 }
-
+.article {
+  min-height: 350px;
+  background-color: #9BCE0B;
+}
+.footer {
+  margin-top: 10px;
+    min-height: 50px;
+    background-color: #9BCE0B;
+}
 /*  -- naudingos -- */
 
 .no-padding {
