@@ -31,10 +31,22 @@ for ( i = 0; i < 5; i++) {
 // kursime nauja masyva uzpildyta, atsitiktiniais skaiciais
 skaiciai = [];
 for ( k = 0; k < 50; k++) {
-  skaiciai[k] = Math.random();
+  skaiciai[k] = Math.round(Math.random() * 100) ;
+}
+console.log(skaiciai.toString());
+
+// uzdavinys: pakeisti atsitiktinius skaicius, kurie yra lyginai i "lyginis"
+if ( (skaiciai[0] % 2) === 0 ) {
+  skaiciai[0] = "lyginis";
+}
+console.log(  skaiciai[0]);
+
+for ( k = 0; k < 50; k++) {
+  if ( skaiciai[k] % 2 === 0) { 
+      skaiciai[k] = "lyginis";
+  }
 }
 
-console.log(skaiciai.toString());
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
