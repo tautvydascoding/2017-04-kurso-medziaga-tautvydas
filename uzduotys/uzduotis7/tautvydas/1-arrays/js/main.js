@@ -1,11 +1,11 @@
 // =================ARRAY / masyvas==========================
 
 
-var darbuotojoPagamintosDetales = new Array();
+//var darbuotojoPagamintosDetales = new Array();
 
-var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas”];
+//var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas”];
 // masinosBagazine[1] = "zvejybosKede";
-masinosBagazine.push("maistas");
+//masinosBagazine.push("maistas");
 
 
 // console.warn("console blogai atvaizduoja isskleistus masyvus, bet gerai atvaizduoja skliaustuose []");
@@ -32,7 +32,7 @@ masinosBagazine.push("maistas");
 
 // ==================MATH=========================
 
- var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
+// var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
 
 // ====================FOR /   WHILE=======================
 // for()
