@@ -2,19 +2,39 @@
 
 
 
+console.log("labas");
 
-//var darbuotojoPagamintosDetales = new Array();
+var kuprine = ["prozektorius", "degtukai", "peilis", 50];
+console.log(kuprine[0], kuprine[1]);
+console.log(kuprine.toString());
+console.log(kuprine.join(" "));
 
-//var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas"];
-// masinosBagazine[1] = "zvejybosKede";
-//masinosBagazine.push("maistas");
+kuprine.push("vanduo");
+console.log(kuprine.toString());
+kuprine.unshift("kiausiniai");
 
+console.log(kuprine.toString());
+ranka = kuprine.slice(2,3);   // copy kuprine[2]
+ console.log("Ranka: ", ranka);
+console.log("Kuprineje liko: ", kuprine);
+
+kuprine.splice(2,1);    // istriname 2 elemneta
+console.log("Kuprineje liko: ", kuprine);
 
 // console.warn("console blogai atvaizduoja isskleistus masyvus, bet gerai atvaizduoja skliaustuose []");
-// masinosBagazine.splice(3, 2);
-// spausdintiIKonsoleSuKomentaru("iskerpome is masyvo 2 elementus nuo trecio",masinosBagazine);
-// masinosBagazine.slice(2);
-// spausdintiIKonsoleSuKomentaru("iskroveme bagazine, pasilikome 2 daiktus",masinosBagazine);
+
+// =================================For===================
+
+for ( i = 0; i < 5; i++) {
+    console.log(kuprine[i]);
+}
+// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais
+skaiciai = [];
+for ( k = 0; k < 50; k++) {
+  skaiciai[k] = Math.random();
+}
+
+console.log(skaiciai.toString());
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
