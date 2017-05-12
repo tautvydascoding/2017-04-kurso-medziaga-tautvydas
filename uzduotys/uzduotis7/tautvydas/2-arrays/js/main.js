@@ -33,6 +33,19 @@ for ( kk = 0; kk < 150; kk++ ) {
 }
 console.log(parts.join(" "));
 
+// 2. surasti geriausia darbuotoja
+var bestWorker;
+var bestResult = 0;
+for ( ii = 0; ii < 150; ii++) {
+  if ( parts[ii] > bestResult) {
+    bestWorker = ii;
+    bestResult = parts[ii];
+  }
+}
+console.log(" Geriausias rezultatas: ", bestResult);
+console.log(" Geriausias darbuotojas: ", bestWorker);
+
+
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
