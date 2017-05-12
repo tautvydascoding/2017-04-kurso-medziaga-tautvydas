@@ -45,7 +45,17 @@ for ( ii = 0; ii < 150; ii++) {
 console.log(" Geriausias rezultatas: ", bestResult);
 console.log(" Geriausias darbuotojas: ", bestWorker);
 
-
+// 3. surasti prasciausia darbuotoja
+var worstWorker;
+var worstResult = parts[0];
+for ( ii = 0; ii < 150; ii++) {
+  if ( parts[ii] < worstResult) {
+    worstWorker = ii;
+    worstResult = parts[ii];
+  }
+}
+console.log(" prasciausias rezultatas: ", worstResult);
+console.log(" prasciausias darbuotojas: ", worstWorker);
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
