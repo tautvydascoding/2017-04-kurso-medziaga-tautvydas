@@ -3,13 +3,36 @@
 
 
 console.log("labas");
- 
-// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais
-skaiciai = [];
-for ( k = 0; k < 50; k++) {
-  skaiciai[k] = Math.round(Math.random() * 100) ;
+
+// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais (pagamintomis datalemis per diena)
+parts = [];
+for ( k = 0; k < 150; k++) {
+  teigiamas =  Math.round(Math.random() * 250) + 50 ;
+  neigimas = teigiamas * (-1) ;
+
+  if ( Math.random() < 0.1 ) {
+      parts[k] = neigimas;
+  } else {
+      parts[k] = teigiamas;
+  }
 }
-console.log(skaiciai.toString());
+
+console.log(parts.join(" "));
+
+// 1. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
+// 2. surasti geriausia darbuotoja
+// 3. surasti blogiausia darbuotoja
+
+// 1. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
+for ( kk = 0; kk < 150; kk++ ) {
+    // parts[kk] = Math.abs( parts[kk] );  // verciame i teigema skaiciu
+
+    if ( parts[kk] < 0 ) {
+         parts[kk] = Math.abs( parts[kk] );  // verciame i teigema skaiciu
+    }
+}
+console.log(parts.join(" "));
+
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
