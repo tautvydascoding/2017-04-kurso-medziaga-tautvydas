@@ -1,9 +1,11 @@
 // =================ARRAY / masyvas==========================
 
 
+
+
 //var darbuotojoPagamintosDetales = new Array();
 
-//var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas”];
+//var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas"];
 // masinosBagazine[1] = "zvejybosKede";
 //masinosBagazine.push("maistas");
 
