@@ -1,10 +1,64 @@
-// =================ARRAY / masyvas==========================
+console.log("labas");
 
 
-var darbuotojoPagamintosDetales = new Array();
+//kursime nauja masyva uzpildyta, atsitiktiniais skaiciais (pagamintomis detalemis per diena)
+
+parts = [];
+
+for (k = 0; k < 150; k++) {
+  teigiamas = Math.round(Math.random() * 250) + 50;
+  neigiamas = teigiamas * (-1);
+  if (Math.random() < 0.1) {
+    parts[k] = neigiamas;
+  } else {
+    parts[k] = teigiamas;
+  }
+}
+
+console.log(parts.join(" "));
+
+//2 dalis visus skaicius paversti teigiamais is masyvo "parts"
+// surasti menesio darbuotoja
+//surasti blogiausia darbuotoja
+
+for (k = 0; k < 150; k++) {
+  if (parts[k] < 0) {
+    parts[k] = Math.abs(parts[k]);
+  }
+}
+
+console.log(parts.join(" "));
+
+// 2 uzdavinys
+var worstWorker;
+var worstResult = 300;
+
+for (k = 0; k < 150; k++) {
+  if (parts[k] < worstResult) {
+    worstWorker = k;
+    worstResult = parts[k];
+  }
+}
+
+console.log("Blogiausias rezultatas: ", worstResult);
+console.log("Blogiausias darbuotojas: ", worstWorker);
+
+
+/*for (ii = 0; ii < parts.length; ii++) {
+  if (parts[ii] > bestResult) {
+    bestWorker = ii;
+    bestResult = parts[ii];
+  }
+}
+*/
+
+
+
+
+/*
+var darbuotojoPagamintosDetales = newArray();
 
 var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas"];
-
 // masinosBagazine[1] = "zvejybosKede";
 masinosBagazine.push("maistas");
 
@@ -33,7 +87,7 @@ masinosBagazine.push("maistas");
 
 // ==================MATH=========================
 
- var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
+var nuoVienoIkiSimto = Math.floor(Math.random() * 100);
 
 // ====================FOR /   WHILE=======================
 // for()
@@ -60,18 +114,4 @@ masinosBagazine.push("maistas");
 //     darbuotojoPagamintosDetales.push(  Math.floor(Math.random() * 100));
 // }
 // spausdintiIKonsoleSuKomentaru("darbuotoju detale: ", darbuotojoPagamintosDetales);
-
-
-// ===========================================
-
-
-
-
-
-// ===========================================
-
-
-
-
-
-// ===========================================
+*/
