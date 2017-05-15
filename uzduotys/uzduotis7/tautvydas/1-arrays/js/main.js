@@ -1,19 +1,58 @@
 // =================ARRAY / masyvas==========================
 
 
-var darbuotojoPagamintosDetales = new Array();
 
+<<<<<<< HEAD
 var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas"];
 
 // masinosBagazine[1] = "zvejybosKede";
 masinosBagazine.push("maistas");
+=======
+console.log("labas");
+>>>>>>> 1e235b2f49c773e52039c053598eee88c8e135c1
 
+var kuprine = ["prozektorius", "degtukai", "peilis", 50];
+console.log(kuprine[0], kuprine[1]);
+console.log(kuprine.toString());
+console.log(kuprine.join(" "));
+
+kuprine.push("vanduo");
+console.log(kuprine.toString());
+kuprine.unshift("kiausiniai");
+
+console.log(kuprine.toString());
+ranka = kuprine.slice(2,3);   // copy kuprine[2]
+ console.log("Ranka: ", ranka);
+console.log("Kuprineje liko: ", kuprine);
+
+kuprine.splice(2,1);    // istriname 2 elemneta
+console.log("Kuprineje liko: ", kuprine);
 
 // console.warn("console blogai atvaizduoja isskleistus masyvus, bet gerai atvaizduoja skliaustuose []");
-// masinosBagazine.splice(3, 2);
-// spausdintiIKonsoleSuKomentaru("iskerpome is masyvo 2 elementus nuo trecio",masinosBagazine);
-// masinosBagazine.slice(2);
-// spausdintiIKonsoleSuKomentaru("iskroveme bagazine, pasilikome 2 daiktus",masinosBagazine);
+
+// =================================For===================
+
+for ( i = 0; i < 5; i++) {
+    console.log(kuprine[i]);
+}
+// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais
+skaiciai = [];
+for ( k = 0; k < 50; k++) {
+  skaiciai[k] = Math.round(Math.random() * 100) ;
+}
+console.log(skaiciai.toString());
+// ==================================================================
+// uzdavinys: pakeisti atsitiktinius skaicius, kurie yra lyginai i "lyginis"
+if ( (skaiciai[0] % 2) === 0 ) {
+  skaiciai[0] = "lyginis";
+}
+console.log(  skaiciai[0]);
+
+for ( k = 0; k < 50; k++) {
+  if ( skaiciai[k] % 2 === 0) {
+      skaiciai[k] = "lyginis";
+  }
+}
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
@@ -33,7 +72,7 @@ masinosBagazine.push("maistas");
 
 // ==================MATH=========================
 
- var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
+// var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
 
 // ====================FOR /   WHILE=======================
 // for()

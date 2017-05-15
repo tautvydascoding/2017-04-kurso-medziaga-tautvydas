@@ -1,35 +1,38 @@
+// =================ARRAY / masyvas==========================
+
+
+
 console.log("labas");
 
-
-//kursime nauja masyva uzpildyta, atsitiktiniais skaiciais (pagamintomis detalemis per diena)
-
+// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais (pagamintomis datalemis per diena)
 parts = [];
+for ( k = 0; k < 150; k++) {
+  teigiamas =  Math.round(Math.random() * 250) + 50 ;
+  neigimas = teigiamas * (-1) ;
 
-for (k = 0; k < 150; k++) {
-  teigiamas = Math.round(Math.random() * 250) + 50;
-  neigiamas = teigiamas * (-1);
-  if (Math.random() < 0.1) {
-    parts[k] = neigiamas;
+  if ( Math.random() < 0.1 ) {
+      parts[k] = neigimas;
   } else {
-    parts[k] = teigiamas;
+      parts[k] = teigiamas;
   }
 }
 
 console.log(parts.join(" "));
 
-//2 dalis visus skaicius paversti teigiamais is masyvo "parts"
-// surasti menesio darbuotoja
-//surasti blogiausia darbuotoja
+// 1. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
+// 2. surasti geriausia darbuotoja
+// 3. surasti blogiausia darbuotoja
 
-for (k = 0; k < 150; k++) {
-  if (parts[k] < 0) {
-    parts[k] = Math.abs(parts[k]);
-  }
+// 1. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
+for ( kk = 0; kk < 150; kk++ ) {
+    // parts[kk] = Math.abs( parts[kk] );  // verciame i teigema skaiciu
+
+    if ( parts[kk] < 0 ) {
+         parts[kk] = Math.abs( parts[kk] );  // verciame i teigema skaiciu
+    }
 }
-
 console.log(parts.join(" "));
 
-// 2 uzdavinys
 // 2. surasti geriausia darbuotoja
 var bestWorker;
 var bestResult = 0;
@@ -44,7 +47,7 @@ console.log(" Geriausias darbuotojas: ", bestWorker);
 
 // 3. surasti prasciausia darbuotoja
 var worstWorker;
-var worstResult = parts[0]; /*kodel parts[0], o ne tiesiog 300?*/
+var worstResult = parts[0];
 for ( ii = 0; ii < 150; ii++) {
   if ( parts[ii] < worstResult) {
     worstWorker = ii;
@@ -53,21 +56,6 @@ for ( ii = 0; ii < 150; ii++) {
 }
 console.log(" prasciausias rezultatas: ", worstResult);
 console.log(" prasciausias darbuotojas: ", worstWorker);
-
-
-/*
-var darbuotojoPagamintosDetales = newArray();
-
-var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas"];
-// masinosBagazine[1] = "zvejybosKede";
-masinosBagazine.push("maistas");
-
-
-// console.warn("console blogai atvaizduoja isskleistus masyvus, bet gerai atvaizduoja skliaustuose []");
-// masinosBagazine.splice(3, 2);
-// spausdintiIKonsoleSuKomentaru("iskerpome is masyvo 2 elementus nuo trecio",masinosBagazine);
-// masinosBagazine.slice(2);
-// spausdintiIKonsoleSuKomentaru("iskroveme bagazine, pasilikome 2 daiktus",masinosBagazine);
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
@@ -87,7 +75,7 @@ masinosBagazine.push("maistas");
 
 // ==================MATH=========================
 
-var nuoVienoIkiSimto = Math.floor(Math.random() * 100);
+// var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
 
 // ====================FOR /   WHILE=======================
 // for()
@@ -114,4 +102,18 @@ var nuoVienoIkiSimto = Math.floor(Math.random() * 100);
 //     darbuotojoPagamintosDetales.push(  Math.floor(Math.random() * 100));
 // }
 // spausdintiIKonsoleSuKomentaru("darbuotoju detale: ", darbuotojoPagamintosDetales);
-*/
+
+
+// ===========================================
+
+
+
+
+
+// ===========================================
+
+
+
+
+
+// ===========================================
