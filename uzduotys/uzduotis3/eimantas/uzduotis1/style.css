@@ -1,0 +1,134 @@
+body {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.chicken {
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  width: 33%;
+  box-sizing: border-box;
+  background-color: grey;
+  padding-top: 20px;
+}
+
+.beef {
+  position: relative;
+  align-items: center;
+  display: inline-block;
+  border-style: solid;
+  width: 33%;
+  box-sizing: border-box;
+  background-color: grey;
+  padding-top: 20px;
+}
+
+.sushi {
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  width: 33%;
+  box-sizing: border-box;
+  background-color: grey;
+  padding-top: 20px;
+}
+
+.title1 {
+  width: 100px;
+  text-align: center;
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0;
+  border-right: 0;
+  margin: 0;
+  border-left: solid;
+  border-bottom: solid;
+}
+
+.title2 {
+  color: white;
+  width: 100px;
+  text-align: center;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0;
+  border-right: 0;
+  margin-top: 0;
+  border-left: solid black;
+  border-bottom: solid black;
+}
+
+.title3 {
+  width: 90px;
+  text-align: center;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0;
+  border-right: 0;
+  margin: 0;
+  border-left: solid;
+  border-bottom: solid;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/* ---------------------------------------@media--------------------------------------- */
+@media (max-width: 992px) {
+  .sushi {
+    width: 96%;
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  body {
+      width: 100%;
+  }
+
+  .chicken, .beef {
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+}
+
+@media (max-width: 375px) {
+  .chicken {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 25px;
+  }
+
+  .beef {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 25px;
+  }
+
+  .sushi {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 25px;
+  }
+
+  body {
+    width: 100%;
+  }
+}
