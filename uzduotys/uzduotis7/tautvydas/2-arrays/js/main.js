@@ -4,48 +4,58 @@
 
 console.log("labas");
 
-var kuprine = ["prozektorius", "degtukai", "peilis", 50];
-console.log(kuprine[0], kuprine[1]);
-console.log(kuprine.toString());
-console.log(kuprine.join(" "));
+// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais (pagamintomis datalemis per diena)
+parts = [];
+for ( k = 0; k < 150; k++) {
+  teigiamas =  Math.round(Math.random() * 250) + 50 ;
+  neigimas = teigiamas * (-1) ;
 
-kuprine.push("vanduo");
-console.log(kuprine.toString());
-kuprine.unshift("kiausiniai");
-
-console.log(kuprine.toString());
-ranka = kuprine.slice(2,3);   // copy kuprine[2]
- console.log("Ranka: ", ranka);
-console.log("Kuprineje liko: ", kuprine);
-
-kuprine.splice(2,1);    // istriname 2 elemneta
-console.log("Kuprineje liko: ", kuprine);
-
-// console.warn("console blogai atvaizduoja isskleistus masyvus, bet gerai atvaizduoja skliaustuose []");
-
-// =================================For===================
-
-for ( i = 0; i < 5; i++) {
-    console.log(kuprine[i]);
-}
-// kursime nauja masyva uzpildyta, atsitiktiniais skaiciais
-skaiciai = [];
-for ( k = 0; k < 50; k++) {
-  skaiciai[k] = Math.round(Math.random() * 100) ;
-}
-console.log(skaiciai.toString());
-// ==================================================================
-// uzdavinys: pakeisti atsitiktinius skaicius, kurie yra lyginai i "lyginis"
-if ( (skaiciai[0] % 2) === 0 ) {
-  skaiciai[0] = "lyginis";
-}
-console.log(  skaiciai[0]);
-
-for ( k = 0; k < 50; k++) {
-  if ( skaiciai[k] % 2 === 0) {
-      skaiciai[k] = "lyginis";
+  if ( Math.random() < 0.1 ) {
+      parts[k] = neigimas;
+  } else {
+      parts[k] = teigiamas;
   }
 }
+
+console.log(parts.join(" "));
+
+// 1. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
+// 2. surasti geriausia darbuotoja
+// 3. surasti blogiausia darbuotoja
+
+// 1. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
+for ( kk = 0; kk < 150; kk++ ) {
+    // parts[kk] = Math.abs( parts[kk] );  // verciame i teigema skaiciu
+
+    if ( parts[kk] < 0 ) {
+         parts[kk] = Math.abs( parts[kk] );  // verciame i teigema skaiciu
+    }
+}
+console.log(parts.join(" "));
+
+// 2. surasti geriausia darbuotoja
+var bestWorker;
+var bestResult = 0;
+for ( ii = 0; ii < 150; ii++) {
+  if ( parts[ii] > bestResult) {
+    bestWorker = ii;
+    bestResult = parts[ii];
+  }
+}
+console.log(" Geriausias rezultatas: ", bestResult);
+console.log(" Geriausias darbuotojas: ", bestWorker);
+
+// 3. surasti prasciausia darbuotoja
+var worstWorker;
+var worstResult = parts[0];
+for ( ii = 0; ii < 150; ii++) {
+  if ( parts[ii] < worstResult) {
+    worstWorker = ii;
+    worstResult = parts[ii];
+  }
+}
+console.log(" prasciausias rezultatas: ", worstResult);
+console.log(" prasciausias darbuotojas: ", worstWorker);
 
 //====================== begame per visa masyva  naudodami FOR ============
 // for ( var i = 0; i < masinosBagazine.length; i++ ) {
