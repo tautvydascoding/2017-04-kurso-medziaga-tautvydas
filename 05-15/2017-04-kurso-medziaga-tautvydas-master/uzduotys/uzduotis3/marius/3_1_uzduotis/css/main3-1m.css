@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+h2 {
+  margin: 0;
+}
+
+article {
+  position: relative;
+  width: 31%;
+  float: left;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  padding: 30px 10px 10px 10px ;
+  background-color: rgb(224, 224, 224);
+}
+#center-article {
+  margin: 0 2%;
+}
+/* butinas naudojant Float */
+#clear-float {
+  clear: both;
+}
+.pav-1 {
+  width: 90px;
+  background-color: red;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+/* IDEA: plancetinis */
+
+@media (max-width: 992px) {
+  #last-article {
+    margin-top: 50px;
+    width: 96%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  body {
+    width: 100%;
+  }
+  #first-article, #center-article {
+    width: 46%;
+    margin: 0 2%;
+  }
+}
+
+/* IDEA: mobilus */
+
+@media (max-width: 375px) {
+  #last-article {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+  }
+  #center-article {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #first-article {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+  }
+
+}

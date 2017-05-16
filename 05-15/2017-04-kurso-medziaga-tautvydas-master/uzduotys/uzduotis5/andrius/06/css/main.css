@@ -1,0 +1,27 @@
+#header-1, #footer-1  {
+  background-color: #9BCE0B;
+  min-height: 100px;
+  }
+.block-1,.block-2, .block-3  {
+  background-color: #9BCE0B;
+}
+.block-1 {
+  min-height: 430px;
+}
+.block-2 {
+  min-height: 300px;
+  }
+.block-3 {
+  min-height: 100px;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#header-1 h3 {
+  margin-top:0;
+
+}
+h3 {
+  padding: 30px;
+}
