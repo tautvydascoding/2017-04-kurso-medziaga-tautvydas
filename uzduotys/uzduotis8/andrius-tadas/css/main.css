@@ -48,16 +48,10 @@
   padding-bottom: 30px;
 }
 
-.bodygl {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 .footergl {
   padding-top: 30px;
   min-height: 260px;
-  background-color: grey;
+  background-color: #333;
 }
 
 .meniuNoBorder {
@@ -65,6 +59,7 @@
   font-size: 20px;
   width: 200px;
   background-color: rgba(0, 0, 0, 0);
+
 }
 
 .reklama {
@@ -79,4 +74,7 @@
 
 .maxPlotis2 {
   min-width: 80%;
+}
+.textColorWhite {
+  color: #D3D3D3;
 }
