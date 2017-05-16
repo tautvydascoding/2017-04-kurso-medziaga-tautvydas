@@ -21,8 +21,6 @@
 .content_galerry {
   min-height: 400px;
   text-align: justify;
-  margin-left: 300px;
-  margin-right: 300px;
   margin-top: 10px;
 }
 
@@ -50,7 +48,7 @@
   margin-top: 0;
 }
 
-.ads, .content_galerry {
+.ads {
   padding: 5px;
 }
 
@@ -96,4 +94,8 @@
 .footer_img {
   margin-left: 75px;
   margin-top: 10px;
+}
+
+.float_none_galerry {
+  float: none;
 }
