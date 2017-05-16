@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif, ;
+}
+
+body {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beef {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+article {
+  position: relative;
+  width: 30%;
+  border: 2px solid green;
+  padding: 5px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00FFAA;
+}
+
+.label1 {
+  position: absolute;
+  width: 90px;
+  background-color: green;
+  top: 2px;
+  right: 2px;
+  text-align: center
+}
+
+.label2 {
+  position: absolute;
+  width: 90px;
+  background-color: red;
+  top: 2px;
+  right: 2px;
+  text-align: center
+}
+
+.label3 {
+  position: absolute;
+  width: 90px;
+  background-color: blue;
+  top: 2px;
+  right: 2px;
+  text-align: center
+}
+
+
+/* butinas naudojant Float */
+
+.clear-float {
+  clear: both;
+}
+
+@media (max-width:992px) {
+  body {
+    width: 100%
+  }
+  .susi {
+    width: 96%;
+    margin-left: 18px;
+    margin-top: 25px;
+  }
+  .chicken, .beef {
+    width: 46%;
+    margin: 0 2%;
+  }
+}
+
+@media (max-width:480px) {
+  body {
+    width: 100%;
+    background-color: lightgreen;
+  }
+  .chicken, .beef, .susi {
+    width: 100%;
+    margin: 3%;
+  }
+}

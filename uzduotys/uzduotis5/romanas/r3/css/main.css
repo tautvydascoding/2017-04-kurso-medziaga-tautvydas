@@ -1,0 +1,27 @@
+.navigation, .wrapper {
+  min-height: 500px;
+}
+
+.navigation {
+  background-color: #D5E5D5;
+/*padding: 1000px;
+  padding: -1000px; */
+}
+.container.navigation {
+  overflow: hidden;
+}
+h1 {
+  color: blue;
+}
+
+.header, .footer {
+  background-color: #9BCE09;
+  min-height: 100px;
+}
+.content {
+  min-height: 300px;
+}
+
+
+/* IDEA:
+  background-color: #D5E5D5;9BCE09 */

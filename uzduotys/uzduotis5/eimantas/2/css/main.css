@@ -1,0 +1,47 @@
+.navigation {
+  background-color: red;
+  min-height: 400px;
+  padding: 10px;
+}
+
+.content {
+  background-color: blue;
+  min-height: 200px;
+  padding: 10px;
+}
+
+.labas {
+  background-color: yellow;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.m1 {
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.m2 {
+  padding-left: 0;
+}
+
+.m3 {
+  padding: 0;
+}
+
+.m0 {
+  padding: 0;
+}
+
+.ads, .ads2 {
+  background-color: green;
+  min-height: 200px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+}

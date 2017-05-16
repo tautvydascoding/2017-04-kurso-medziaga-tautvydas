@@ -1,0 +1,99 @@
+body {
+  background: url("../img/josh-felise-10912.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.block-1 {
+  min-height: 200px;
+  padding-top: 180px;
+}
+
+.block-2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.block-3 {
+  text-align: center;
+}
+
+.block-1 h4 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-align: center;
+}
+
+.block-2 h1 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-align: center;
+}
+
+.block-3 h4 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+}
+
+#footer h5 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 10px;
+}
+
+#footer {
+  min-height: 50px;
+}
+
+#header {
+  min-height: 50px;
+  text-align: right;
+  }
+
+section {
+  min-height: 604px;
+}
+
+.btn-2 {
+  color: #FFFFFF;
+  width: 120px;
+  height: 35px;
+  padding-top: 0;
+  background: rgba(0, 0, 0, 0);
+  border-color: #FFFFFF;
+}
+
+.btn-1 {
+  width: 120px;
+  height: 35px;
+  padding-top: 0;
+}
+
+.block-1-2 {
+  width: 20%;
+  max-width: 100%;
+  padding-top: 10px;
+  border-bottom: solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  border: none;
+}
+.glyphicon {
+color: rgba(255, 255, 255, 0.7)
+}
