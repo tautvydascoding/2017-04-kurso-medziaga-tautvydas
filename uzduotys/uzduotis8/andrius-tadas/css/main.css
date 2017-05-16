@@ -1,0 +1,82 @@
+.photo {
+  text-align: center;
+  padding: 5px;
+}
+
+.imgSize1 {
+  width: 130px;
+  height: 130px;
+}
+
+.imgSize2 {
+  width: 200px;
+  height: 200px;
+}
+
+.imgSize3 {
+  width: 50px;
+  height: 50px;
+}
+.imgSize4 {
+  width: 200px;
+  height: 200px;
+}
+
+.padding30 {
+  padding: 30px;
+}
+.paddingB {
+  padding-bottom: 10px;
+}
+
+#headergl {
+  padding-top: 20px;
+}
+
+.centruoti {
+  text-align: center;
+}
+
+.antraste1 {
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}
+
+.antraste2 {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+#bodygl {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#footergl {
+  padding-top: 30px;
+  min-height: 260px;
+  background-color: grey;
+}
+
+.meniuNoBorder {
+  border: none;
+  font-size: 20px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.reklama {
+  background-color: green;
+  margin: 0;
+  width: 100%;
+}
+.maxPlotis {
+  max-width: 40%;
+}
+.maxPlotis2 {
+  min-width: 80%;
+}
