@@ -1,0 +1,98 @@
+/* IDEA: ---------Header---------- */
+
+.hdMain {
+  width: 1000px;
+  height: 100px;
+  background-color: #21252B;
+
+}
+
+.hd {
+  height: inherit;
+  background-color: #505662;
+}
+
+.logoMain {
+  height: inherit;
+}
+
+.logo1 {
+  padding-top: 20px;
+}
+
+.navMain {
+  height: inherit;
+}
+
+.nav1 {
+  height: inherit;
+
+}
+
+ul li {
+  display: inline-block;
+  padding-top: 40px;
+}
+
+
+.adsMain {
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.ads1 {
+  align-self: flex-end;
+  height: 100%;
+  width: auto;
+  float: right;
+}
+/*--------------------------------------------*/
+.clear {
+  clear: both;
+}
+/* IDEA:  --------------CONTENT-------------*/
+
+.content {
+  width: 1000px;
+}
+
+/* IDEA: CENTER AD------------------ */
+
+.centerad {
+  height: 200px;
+  background-image: url("http://orig05.deviantart.net/f241/f/2009/247/9/3/a_dreamy_world_95th_wide_by_grafixeye.jpg");
+  background-size: cover;
+  margin: 30px 0;
+}
+
+.overflow {
+  /*background: #282C3400;*/
+  background-color: rgba(40, 44, 52, 0.5);
+}
+
+.overflow:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* IDEA: --KOMANDOS */
+
+.high-inherit {
+  height: inherit;
+}
+.pos-relative {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*-----------*/
