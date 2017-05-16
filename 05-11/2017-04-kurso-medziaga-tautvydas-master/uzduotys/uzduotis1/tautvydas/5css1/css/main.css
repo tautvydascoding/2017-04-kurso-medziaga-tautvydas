@@ -1,0 +1,87 @@
+body {
+  width: 1040px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin:0;*/
+}
+h1 {
+  text-align: center;
+}
+p {
+  color: #222;
+  margin-top: 25px;
+}
+
+
+.turinys1, .turinys2, .turinys3  {
+  width: 26%;
+  background-color: #999;
+  border: 1px solid #000;
+  float: left;
+  padding: 0px 10px;
+  margin: 20px;
+  position: relative;
+}
+.turinys1 h2{
+  background-color: #fb8686;
+  width: 90px;
+}
+.turinys2 h2{
+  background-color: #ab8000;
+  width: 90px;
+}
+.turinys3 h2{
+  background-color: #fc8000;
+  width: 90px;
+}
+.turinys1 h2, .turinys2 h2, .turinys3 h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 0;
+  margin-top: 0px;
+}
+
+@media (max-width:800px) {
+  body { width: 100%; }
+
+
+  /* pirmas budas 50% ekrano */
+  * { box-sizing: border-box; }
+  .turinys1 {
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .turinys2 {
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .turinys3 {
+    /* pirmas budas */
+    margin: 0 2%;
+    /* antras budas */
+    margin: 0  2% 0 2%;
+    /* trecias budas */
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+      width: 96%;
+  }
+
+
+  /* antras budas 50% */
+  /*.turinys1 {
+    margin-left: 0;
+  }
+  .turinys2 {
+    margin-right: 0;
+  }
+  .turinys3 {
+    margin: 0 0;
+  }*/
+
+}

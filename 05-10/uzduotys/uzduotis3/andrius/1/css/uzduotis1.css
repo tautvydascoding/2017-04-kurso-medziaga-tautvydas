@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  /*width: 970px;*/
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin: 0;
+}
+
+article {
+  position: relative;
+  width: 32%;
+  float: left;
+  font-family: cursive;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  padding: 40px 10px 10px 10px;
+  background-color: rgb(224, 224, 224);
+}
+
+.center-div {
+  margin: 0 2%;
+}
+
+
+/* butinas naudojant Float */
+
+.clear-float {
+  clear: both;
+}
+
+.pav-1 {
+  position: absolute;
+  border: solid 1px #000;
+  width: 130px;
+  background-color: purple;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+.pav-2 {
+  position: absolute;
+  border: solid 1px #000;
+  width: 130px;
+  background-color: red;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+.pav-3 {
+  position: absolute;
+  border: solid 1px #000;
+  width: 130px;
+  background-color: yellow;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  #last-article {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  #first-article, .center-div {
+    width: 46%;
+    margin: 0 2%;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #last-article {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #first-article, .center-div {
+    width: 96%;
+    margin: 2% 2%;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,18 @@
+#header-1, #footer-1 {
+  background-color: #FDDA00;
+  min-height: 100px;
+}
+.block-1, .block-2, .block-3 {
+    background-color: #FDDA00;
+    min-height: 450px;
+}
+h3 {
+  padding: 15px;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#header-1 h3 {
+  margin-top: 0;
+}

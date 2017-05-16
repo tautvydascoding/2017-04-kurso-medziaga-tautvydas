@@ -1,0 +1,30 @@
+.navigation, .wrapper {
+  min-height: 400px;
+}
+.navigation {
+  background-color: #D5E8D4;
+}
+header, .footer {
+  background-color: #9BCE0B;
+}
+.content {
+  background-color: #F4F4F4;
+  min-height: 300px;
+}
+/* IDEA:  */
+naudingos
+.no-padding {
+  padding: 0;
+}
+.p15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.m15 {
+  margin: 15px;
+}
+.m-20 {
+  margin: 20px;
+}

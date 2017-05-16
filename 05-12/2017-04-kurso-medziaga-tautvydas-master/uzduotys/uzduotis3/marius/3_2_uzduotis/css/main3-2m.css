@@ -1,0 +1,182 @@
+h1 {
+  font-size: 50px;
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 30px #000000;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Shrikhand', cursive;
+}
+
+body {
+  background-color: grey;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  height: 50px;
+  background-color: rgb(213, 101, 238);
+  margin-bottom: 10px;
+}
+
+#navigation ul li {
+  display: inline-block;
+  width: 22%;
+  line-height: 48px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  width: 150px;
+}
+
+#navigation, #navigation ul {
+  width: 70%;
+  display: inline-block;
+}
+
+#navigation ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+#search {
+  width: 20%;
+  display: inline-block;
+  float: right;
+  padding-top: 15px;
+}
+
+#search button {
+  background-color: black;
+  color: white;
+  width: 30px;
+  border: none;
+  height: 20px;
+}
+
+#content, #sidebar {
+
+}
+
+#content {
+  width: 76%;
+  margin-right: 1%;
+  background-color: white;
+  float: left;
+  padding: 1%;
+
+}
+
+#sidebar {
+  width: 19%;
+  background-color: rgb(213, 101, 238);
+  float: left;
+  padding: 1%;
+
+}
+
+#sidebar ul {
+  padding-left: 30px;
+
+}
+
+#sidebar ul li {
+  padding-bottom: 20px;
+
+}
+
+#sidebar ul li a {
+  color: blue;
+}
+
+.clear-float {
+  clear: both;
+}
+
+#footer {
+  background-color: white;
+  line-height: 48px;
+  vertical-align: middle;
+  padding-left: 1%;
+  margin-top: -6px;
+}
+
+
+
+
+
+
+
+
+/* IDEA: small desktop */
+@media (max-width: 999px) {
+  body {
+    width: auto;
+  }
+  #sidebar {
+    display: none;
+  }
+  #content {
+    width: 100%;
+  }
+  #search {
+    width: 31%;
+  }
+}
+/* IDEA: tablet */
+@media (max-width: 767px) {
+  #navigation {
+    width: 100%;
+  }
+  #search {
+    width: 100%;
+  }
+  #search form {
+    width: 216px;
+    margin-left: auto; /* centruojame Search lauka */
+    margin-right: auto;
+  }
+}
+@media (max-width: 425px) {
+  #sidebar {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  #navigation ul li {
+    display: block;
+  }
+  #navigation ul {
+    width: 95px;
+    margin-left: auto; /* centruojame Search lauka */
+    margin-right: auto;
+  }
+  #header {
+    height: 300px;
+  }
+}
+
+
+
+.center-element {
+  margin-left: auto; /* centruojame Search lauka */
+  margin-right: auto;
+}

@@ -1,0 +1,189 @@
+h1 {
+    font-size: 50px;
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px
+}
+
+h2 {
+    text-align: center;
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Shrikhand", cursive;
+}
+
+body {
+    background-color: #ff70eb;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    height: 50px;
+    background-color: #ff70eb;
+    margin-bottom: 20px;
+}
+
+#navigation ul li {
+    display: inline-block;
+    width: 22%;
+    line-height: 48px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin 0;
+}
+
+/*input
+    width: 190px;*/
+}
+
+#navigation {
+    width: 69%;
+    display: inline-block;
+}
+
+/*#navigation ul a {
+    text-decoration: none;
+    color: #000;
+}*/
+
+#search {
+    width 22%;
+    display: inline-block;
+    float-right;
+    padding-top: 15px;
+}
+
+/*#search button {
+    background-color: black;
+    color: white;
+    width: 70px;
+    border: none;
+    height: 20px
+}*/
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*#content, #sidebar {
+    height: 450px;
+}*/
+
+#content {
+    width: 74%;
+    margin-right: 2%;
+    background-color: #fff;
+    float: left;
+    padding: 2%
+}
+
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+#sidebar {
+    padding: 1%;
+    width: 18%;
+    float: left;
+    background-color: rgb(240, 75, 249);
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+}
+#sidebar ul {
+    padding-left: 25px;
+}
+
+#sidebar ul li {
+    padding-bottom: 20px;
+}
+
+#sidebar ul li a {
+    color: blue;
+}
+
+.clear-float {
+    clear: both;
+}
+
+#footer {
+    background-color: white;
+    line-height: 48px;
+    vertical-align: middle;
+    padding-left: 1%;
+    margin-top: -6px;
+}
+
+@media (max-width: 999px;) {
+    body {
+        width: auto;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #search {
+        width: 31%
+    }
+}
+
+@media (max-width: 767px;) {
+    #navigation {
+        width: 100%
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    #search form {
+        width: 216px;
+        margin-left: auto; /*centruojame Search lauka*/
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 425px;) {
+    #sidebar {
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #navigation ul li {
+        display: block;
+    }
+
+    #navigation ul {
+        width: 95px;
+        margin-left: auto; /*centruojame Search lauka" */
+        margin-right: auto;
+    }
+    #header {
+        height: 300px;
+    }
+
+}
+.center-element {margin-left: auto}
+
+
+
+
+
+

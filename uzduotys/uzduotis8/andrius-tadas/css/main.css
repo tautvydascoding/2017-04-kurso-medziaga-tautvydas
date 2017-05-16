@@ -78,3 +78,55 @@
 .textColorWhite {
   color: #D3D3D3;
 }
+/* IDEA: tado css  zemiau----------------------------*/
+.ulMeniu {
+    list-style-type: none;
+    margin: 0;
+    padding: 50;
+    overflow: hidden;
+  }
+.ulMeniu li {
+    float: left;
+}
+
+.ulMeniu li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+.meniuPic1 {
+  max-width: 100px;
+  max-height: 100px;
+  padding-top: 30px;
+}
+.meniuPic2 {
+  max-width: 120px;
+  max-height: 120px;
+  padding-top: 0;
+
+}
+#nav .row {
+background-color: #333;
+}
+.padding0 {
+  padding: 0;
+}
+.ulContainerContent {
+  list-style-type: none;
+  margin: 10;
+  padding: 50;
+  overflow: hidden;
+}
+.ulContainerContent li {
+float:right;
+}
+.ulContainerContent li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 50px 50px;
+  text-decoration: none;
+}

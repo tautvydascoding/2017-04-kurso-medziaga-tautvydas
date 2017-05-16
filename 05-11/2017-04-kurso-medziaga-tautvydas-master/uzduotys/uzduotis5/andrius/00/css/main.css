@@ -1,0 +1,12 @@
+h1 {
+  color: red;
+}
+.container-fluid {
+  background-color: #EAECEE;
+}
+.container {
+  background-color: #DADADA;
+}
+.col-lg-4,.col-lg-3  {
+  border: solid 1px #000;
+}

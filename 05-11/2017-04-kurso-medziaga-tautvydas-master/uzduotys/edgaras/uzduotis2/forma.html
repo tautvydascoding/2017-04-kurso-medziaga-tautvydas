@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Testuojame forma</title>
+  <link href="CSS\main.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h1> Testuojame Forma</h1>
+  <header>
+    <ul>
+      <li> <a href="index.html">home</a></li>
+      <li> <a href="about.html">about</a></li>
+      <li> <a href="forma.html">forma</a></li>
+      <li> <a href="contacts.html">contacts</a></li>
+    </ul>
+  </header>
+  <section>
+
+    <h2>Registration form</h2>
+    <form action="confirm.html" method="post">
+      <input type="text" name="username" value="Reikšmė" placeholder="User name" min="3" /> <br />
+      <label>User password</label>
+      <input type="password" name="password" value="" placeholder="User password" maxlenght="25" /> <br />
+
+      <input type="radio" name="gender" value="male" /> Male <br>
+      <input type="radio" name="gender" value="female" /> Female <br>
+      <input type="radio" name="gender" value="other" /> Other <br>
+
+      <textarea rows="5"> </textarea>
+      <br>
+
+      <select name="cars">
+              <option value="volvo">volvo</option>
+              <option value="bmw">bmw</option>
+              <option value="mb">Mercedes bendz</option>
+              <option value="ford">ford</option>
+            </select>
+
+      <input type="submit" value="submit" />
+    </form>
+
+    <a href="http://google.com" target="_blank">
+      <button>
+              Pasitikrinti Google
+            </button>
+    </a>
+    <h2>Rask Google informacija</h2>
+    <form action="http://google.com/search" target="_blank" method="get">
+      <input type="text" name="q" />
+      <button type="submit">Ieškoti</button>
+    </form>
+  </section>
+  <footer>
+  </footer>
+</body>
+
+</html>
