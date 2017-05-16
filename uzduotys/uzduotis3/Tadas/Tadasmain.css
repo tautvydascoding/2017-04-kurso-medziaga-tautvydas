@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+article {
+  position: relative;
+  width: 31%;
+  float: left;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  padding: 30px 10px 10px 10px;
+  background-color: rgb(224, 224, 224);
+}
+
+.center-article {
+  margin: 0 2%;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.pav-1, pav-2, pav-3 {
+  width: 90px;
+  background-color: red;
+  position: left;
+  top: 0;
+  right: 0;
+  text-align: left;
+}
+
+.pav-1 {
+  background-color: red;
+}
+
+.pav-2 {
+  background-color: blue;
+}
+
+.pav-3 {
+  background-color: yellow;
+}
+
+
+}
+@media (max-width: 375px) {
+  #first-article, .center-article, #last-article {
+    width: 900px;
+    margin: 10px 20px;
+}
+}
+/* IDEA:  */
+/* IDEA: gfgjfghfghf */
