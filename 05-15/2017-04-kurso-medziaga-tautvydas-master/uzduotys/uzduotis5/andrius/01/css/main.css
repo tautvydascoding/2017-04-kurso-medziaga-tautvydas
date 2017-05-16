@@ -1,0 +1,23 @@
+header, footer {
+  background-color: #9BCE0B;
+  min-height: 100px;
+  padding-left: 15px;
+}
+
+.sides {
+  background-color: #F7F5D8;
+  min-height: 400px;
+}
+
+.middle {
+  min-height: 400px;
+}
+
+.p-15 { padding: 15px;}
+.p-20 { padding: 20px;}
+.m-15 { margin: 20px;}
+.m-20 { margin: 20px;}
+
+body {
+  font-family: george, verdona sans-serif;
+}

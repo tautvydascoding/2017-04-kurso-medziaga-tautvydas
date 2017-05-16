@@ -1,0 +1,20 @@
+
+body {
+  font-family: george, verdona sans-serif;
+}
+header, footer {
+  background-color: #9BCE0B;
+  min-height: 100px;
+}
+.full-side{
+  background-color: #F7F5D8;
+  min-height: 400px;
+}
+.full-center {
+  background-color: #FEFFFC;
+  min-height: 400px;
+}
+/* IDEA: naudingos klases */
+.pt-10 {
+  padding-top: 10px;
+}
