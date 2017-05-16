@@ -1,0 +1,22 @@
+.p-15 { padding: 15px;}
+.p-20 { padding: 20px;}
+.m-15 { margin: 20px;}
+.m-20 { margin: 20px;}
+.navigation {
+min-height: 900px;
+background-color: #D5E8D4;
+}
+.content {
+  background-color: #9BCE0B;
+}
+.mh-200 {
+  min-height: 200px;
+}
+.mh-500 {
+  min-height: 500px;
+}
+.container {
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+  overflow: hidden;
+}

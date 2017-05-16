@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  border: 1px solid #000;
+  background-color: #ccc;
+  width: 31.333%;
+  float: left;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding: 20px;
+  position: relative;
+}
+
+.pink {
+  background-color: #FFC0CB;
+}
+
+.red {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.heading {
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 150px;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > div:last-child {
+  display: none !important;
+}
+
+@media (max-width: 769px) {
+  div {
+    width: 48%;
+  }
+
+  .sushi-container {
+    width: 98%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 361px) {
+  div {
+    width: 92%;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+  }
+  .sushi-container {
+    margin-top: 0;
+    width: 92%;
+  }
+}

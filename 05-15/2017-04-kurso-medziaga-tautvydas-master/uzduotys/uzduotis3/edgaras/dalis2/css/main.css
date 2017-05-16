@@ -1,0 +1,124 @@
+body {
+  width: 970px;
+  background-color: rgb(144, 144, 144);
+}
+#menu{
+  background-color: rgb(189, 61, 200);
+  height: 50px;
+  width: 100%;
+}
+#h1-tit{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-family: 'BioRhyme', sans-serif;
+  text-shadow: 2px 2px 15px black;
+}
+#navigation {
+  width: 68%;
+  height: 100%;
+  display: inline-block;
+}
+.menu-ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#navigation ul li {
+  display: inline-block;
+  width: 24%;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  /*float: left;*/
+}
+#search {
+  /*width: 25%;*/
+  /*height: 100%;*/
+  display: inline-block;
+  vertical-align: middle;
+  right: 0;
+  /*float: right;*/
+}
+input {
+  vertical-align: middle;
+}
+button {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 22px;
+  border: 0;
+}
+#center-page{
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+}
+article{
+  width: 77%;
+  background-color: white;
+  padding: 0 1%;
+  float: left;
+}
+#center-page h1{
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Ravi Prakash', cursive;
+  font-size: 35px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h2 {
+  font-family: 'Ravi Prakash', cursive;
+}
+aside{
+  position: absolute;
+  width: 18%;
+  right: 0;
+  background-color: rgb(189, 61, 200);
+  padding: 0 1%;
+  /* IDEA: neribotas sidebar ilgis tevas overflow: hidden */
+  padding-bottom: 5000px;
+  margin-bottom: -5000px;
+  float: right;
+}
+#aside-ul{
+  padding: 0 10px 0 20px;
+  line-height: 30px;
+}
+.clear-float{
+  clear: both;
+}
+/*@media (max-width: 999px) {
+  body{
+    width: 96%;
+  }
+  #navigation {
+    width: 85%;
+
+  }
+  #search{
+    width: 20%;
+  }
+  article {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+}*/
+/*@media (max-width: 375px) {
+  #first-article {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .center {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  #last-article {
+    width: 100%;
+    margin: 20px 0;
+  }*/

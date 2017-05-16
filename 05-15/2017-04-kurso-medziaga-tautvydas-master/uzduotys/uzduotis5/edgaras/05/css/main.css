@@ -1,0 +1,32 @@
+
+body {
+  font-family: verdona, timesnewroman sans-serif;
+}
+.yellow {
+  background-color: #FDDA00;
+}
+.hd, .ft {
+  min-height: 80px;
+}
+.content, .art, .ads {
+  min-height: 400px;
+}
+.nav {
+  padding-left: 15px;
+  min-height: 400px;
+}
+
+/* IDEA: naudingos klases */
+.pt-10 {
+  padding-top: 10px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.sulyg-up {
+  overflow: hidden;
+}
+.sulyg{
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
