@@ -25,6 +25,10 @@ h2 {
   text-align: center;
 }
 
+.advert{
+  padding-left: 0;
+  padding-right: 0;
+}
 .reklama {
   background-image: url(https://www.upwithtrees.org/files/cache/b2b3709d8df6b54bd3706de5eafb222d_f197.JPG);
   background-size: cover;
@@ -103,6 +107,8 @@ h2 {
 
 .wrapper_gallery {
   background-color: #6EBEC7;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer_ul {
