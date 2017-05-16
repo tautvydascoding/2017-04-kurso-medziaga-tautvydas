@@ -1,0 +1,41 @@
+/* IDEA: romano index.html */
+
+h2 {
+  color: blue;
+}
+
+.header {
+  background-color: #9BCE09;
+  padding: 1%;
+}
+
+  /* IDEA: background-color: #D5E5D5; */
+
+.meniu {
+  padding: 20px 0;
+  top: 50%;
+}
+
+.logoright {
+  text-align: right;
+}
+
+.antraste {
+  text-align: center;
+}
+
+.reklama {
+  background-image: url(https://www.upwithtrees.org/files/cache/b2b3709d8df6b54bd3706de5eafb222d_f197.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.myknopke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
