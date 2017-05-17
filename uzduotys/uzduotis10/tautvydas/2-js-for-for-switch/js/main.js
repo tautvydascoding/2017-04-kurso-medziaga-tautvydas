@@ -21,10 +21,10 @@ for (i = 0; i < ; i++) {
   }
 }
 
-// svarbus patarimas:
-// jeigu naudoji FOR || while cikla, tai negalvojant masyve naudoti "i" (pvz.: myArray[i])
-// patarimas: FOR "for (i = 0; i < ; i++) {"  - nesusijusi su uzdaviniu
-// matricas  - nusipiesti ant popieriaus
+// =================svarbus patarimai===================:
+// ARRAY: jeigu naudoji FOR || while cikla, tai negalvojant masyve naudoti "i" (pvz.: myArray[i])
+// FOR:   "for (i = 0; i < ; i++) {"  - nesusijusi su uzdaviniu (skirtas apeit masyva/ ivykdyti daug kartu kazka)
+// matricas  - visada nusipiesti ant popieriaus eskiza su testiniais duomenimis
 // matrica narys paimamas: myMatica[x][y]   x- stulpelis; y - eilute
 // matricos ilgis daznai skiriasi nuo plocio.
 //  pvz.:
