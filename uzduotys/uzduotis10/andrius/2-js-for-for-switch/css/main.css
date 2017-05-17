@@ -1,0 +1,15 @@
+h1 {
+  color: blue;
+}
+
+
+header {
+  background-color: rgb(242, 222, 240);
+  padding: 20px 0;
+}
+.topmenu {
+  padding: 45px 0;
+}
+ul li {
+  display: inline-block;
+}
