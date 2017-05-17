@@ -24,8 +24,7 @@ var miskas = {
   name : "Labanoras",
   width: 624,
   printWidth: function () {
-
-      console.log(this);
+    console.log(this);
     var gyvunas = "Vilkas";
     console.log("paukstis: ", paukstis);   // spausdiname globalu kintamaji
     console.log("gyvunas: ", gyvunas);     // spausdiname privatu kintamaji
@@ -34,14 +33,31 @@ var miskas = {
   }
 };
 
-miskas.printWidth(); // iskvieciame f-ja
+// miskas.printWidth(); // iskvieciame f-ja
 
 
 
-// ================SWITCH===========================
+// ================that===========================
 
+var salis = {
+  name : "Lietuva",
+  lname: "asdfadsf",
+  printMiestai : function() {
+      console.log("tecio name: ", this.name);
+      var that = this; //
+      var name =  "miestai";  // privatus
+      function printRajonai() {
+            var name = "Partizanai";    // privatus privatus
+            
+            console.log("Name privatus: " + name );        // privatus
+            console.log("Name tecio: " + this.name );      // tetis
+            console.log("Name tecio tecio: " + that.name ); // prosenesli
+      }
+      printRajonai();
+  }
+};
 
-
+salis.printMiestai();
 
 
 // ===========================================
