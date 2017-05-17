@@ -58,8 +58,8 @@ sunus = {
   age : 5
 };
 tetis.vaikas = [];
-tetis.vaikas[0] = sunus;
-tetis.vaikas[1] = sunus;
+tetis.vaikas.push( sunus);
+tetis.vaikas.push( sunus);
 console.log(tetis);
 // ===========================================
 
