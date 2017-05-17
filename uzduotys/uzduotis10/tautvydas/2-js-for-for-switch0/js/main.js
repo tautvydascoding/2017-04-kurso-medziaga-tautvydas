@@ -42,38 +42,9 @@ for (i = 0; i < 5; i++) {    // < darbuotojai[0].length
 
 // ================SWITCH===========================
 
-var name =  "Petras";
-//, "Petras", "Juozas", "Kestas", "Mantas"];
-
-// ilgasis tikrinimas
-// if ( name === "Juozas" ) {
-//   console.log("vardas Juozas");
-// } else if ( name === "Petras") {
-//     console.log("Vardas yra Petras");
-//   } else if (name === "Antanas") {
-//         console.log("Vardas yra Antanas");
-//   } else {
-//       console.log("nezinomas vardas");
-//   }
 
 
-// aiskesnis tikrinimas
-switch (name) {
-  case "Juozas":
-                console.log("vardas Juozas");
-                console.log("tikrai juozas");
-                break;
-  case "Petras":
-                console.log("vardas Petras");
-                break;
-  case "Antanas":
-                console.log("vardas Antanas");
-                break;
-  default:
-              console.log("nezinomas vardas");
-              console.log("nezinomas vardas");
-            break;
-}
+
 
 // ===========================================
 
