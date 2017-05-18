@@ -48,7 +48,7 @@ var salis = {
       var name =  "miestai";  // privatus
       function printRajonai() {
             var name = "Partizanai";    // privatus privatus
-            
+
             console.log("Name privatus: " + name );        // privatus
             console.log("Name tecio: " + this.name );      // tetis
             console.log("Name tecio tecio: " + that.name ); // prosenesli
