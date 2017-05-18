@@ -4,12 +4,14 @@ h1 {
 
 
 header {
+  background-color: red;
+  height: 300px;
+}
+section {
   background-color: rgb(242, 222, 240);
-  padding: 20px 0;
+  height: 600px;
 }
-.topmenu {
-  padding: 45px 0;
-}
-ul li {
-  display: inline-block;
+footer {
+  background-color: rgb(242, 222, 240);
+  height: 300px;
 }
