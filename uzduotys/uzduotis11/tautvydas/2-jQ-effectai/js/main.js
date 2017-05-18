@@ -20,22 +20,38 @@ $(document).ready(function() {
       $('footer').css("height", "20px");
   } );
 
+$('header').css("display", "none");
+  $('button').on("click", function() {
+      $('header').slideToggle(1000);
+  });
+
+// uzduotis: uzvedus pele ant nuotraukos, ji turi tapti 50 % permatoma, nuvedus -  vel 100%
+
+$('.gallery img').on({
+   mouseenter : function() {
+        $(this).fadeTo(300, 0.5);
+   },   // "," nes cia objektas
+   mouseleave : function() {
+        $(this).fadeTo(0, 1);
+   }
+});
+
 // -------F-JOS--CALL BACK---
-function suma(x, y, myFunction) {
-  var ats = x + y;
-  myFunction(ats); //  spasudina
-}
-var print = function(z) {
-  console.log("Suma: " + z);
-};
-suma(10, 5, print);
-// -----------BE CALL BACK-------------------
-function suma2(x, y) {
-  var ats = x + y;
-  return ats;
-}
-kk = suma2(10,5);
-print( kk );
+// function suma(x, y, myFunction) {
+//   var ats = x + y;
+//   myFunction(ats); //  spasudina
+// }
+// var print = function(z) {
+//   console.log("Suma: " + z);
+// };
+// suma(10, 5, print);
+// // -----------BE CALL BACK-------------------
+// function suma2(x, y) {
+//   var ats = x + y;
+//   return ats;
+// }
+// kk = suma2(10,5);
+// print( kk );
 
   function getXimages(x) {
      for (i  =0; i < x; i++ ){
