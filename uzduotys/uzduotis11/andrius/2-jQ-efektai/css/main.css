@@ -1,0 +1,19 @@
+h1 {
+  color: #21252B;
+  margin: 0;
+}
+
+header {
+  background-color: green;
+  height: 200px;
+}
+
+section {
+  background-color: rgb(242, 222, 240);
+  height: 600px;
+}
+
+footer {
+  background-color: yellow;
+  height: 200px;
+}
