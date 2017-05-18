@@ -2,7 +2,7 @@
 
 console.log("labas");
 
-//============ ========================
+//============Anonimine funkcija ========================
 $( "div" ).on( "click", function() {
      $( this ).css({
        width: function( index, value ) {
@@ -26,8 +26,7 @@ function increaseSize (element) {
 }
 
 // -- trumpesnis variantas
-$( "div" ).on( "click", increaseSize 
-});
+$( "div" ).on( "click", increaseSize(this) );
 // ===========================================
 
 
