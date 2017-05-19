@@ -1,0 +1,38 @@
+
+body {
+  font-family: verdona, timesnewroman sans-serif;
+}
+
+header {
+  background-color: #9BCE0B;
+  min-height: 80px;
+}
+
+.nav, .ads {
+  background-color: #9BCE0B;
+  min-height: 100px;
+
+}
+
+.article {
+  background-color: #9BCE0B;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: #9BCE0B;
+  min-height: 80px;
+  
+}
+
+.container {
+  overflow: hidden;
+}
+ /* IDEA: naudingos klases */
+.pt-10 {
+  padding-top: 10px;
+}
+.sulyg{
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}

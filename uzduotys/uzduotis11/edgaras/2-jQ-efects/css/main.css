@@ -1,0 +1,32 @@
+header {
+  background-color: rgb(41, 168, 48);
+  height: 100px;
+}
+
+section {
+  background-color: rgb(135, 168, 41);
+  height: 400px;
+}
+
+footer {
+  background-color: rgb(41, 149, 168);
+  height: 100px;
+}
+
+
+
+
+/* IDEA: --KOMANDOS */
+/*
+.high-inherit {
+  height: inherit;
+}
+.pos-relative {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
