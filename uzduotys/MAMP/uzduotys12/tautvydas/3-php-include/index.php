@@ -12,7 +12,7 @@
 <body>
 <!-- ---------header ------ -->
  <?php
-  include("header.html");
+  include_once("header.html");
   ?>
 
 <!-- ---------content ------ -->
