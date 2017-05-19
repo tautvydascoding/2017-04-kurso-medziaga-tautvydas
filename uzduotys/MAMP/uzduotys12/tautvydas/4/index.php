@@ -9,8 +9,17 @@
 
       <?php
           echo "<h2> Labas</h2>";
-          echo "labas" ;
+          echo "labas <br />" ;
 
+          $humans = ["name" => "Tom",
+                    "lname" => "Okpvol",
+                        1996, 2, 16];
+          print_r($humans);
+
+          // foreach skirtas begti per masyvus. Kiekviena masyvo stalciu jis prilygina susigalvotam kintamajam
+          foreach($humans as $human) {
+            echo "Reiksme: $human  <br />";
+          }
        ?>
 
   </body>
