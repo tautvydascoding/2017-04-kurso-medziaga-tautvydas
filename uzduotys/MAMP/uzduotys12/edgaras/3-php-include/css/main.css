@@ -1,0 +1,151 @@
+
+/* IDEA: romano index.html */
+
+h2 {
+  color: blue;
+}
+
+.header {
+  background-color: #9BCE09;
+  padding: 1%;
+}
+
+  /* IDEA: background-color: #D5E5D5; */
+
+.meniu {
+  padding: 20px 0;
+  top: 50%;
+}
+
+.logoright {
+  text-align: right;
+}
+
+.antraste {
+  text-align: center;
+}
+
+.advert{
+  padding-left: 0;
+  padding-right: 0;
+}
+.reklama {
+  background-image: url(https://www.upwithtrees.org/files/cache/b2b3709d8df6b54bd3706de5eafb222d_f197.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.myknopke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.gallery {
+  min-height: 400px;
+  margin-bottom: 10px;
+}
+
+.graph {
+  min-height: 250px;
+  border: 2em;
+}
+
+.ads {
+  min-height: 250px;
+  text-align: justify;
+}
+
+.pad1, .pad2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content_galerry {
+  min-height: 400px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #6EBEC7;
+  min-height: 250px;
+  margin-top: 10px;
+}
+
+.zeme1, .zeme2, .zeme3, .zeme4, .zeme5, .zeme6, .zeme7 {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+.zeme1, .zeme6 {
+  margin-top: 150px;
+}
+
+.zeme3 {
+  margin-top: 40px;
+}
+
+.ads, h1 {
+  margin-top: 0;
+}
+
+.ads {
+  padding: 5px;
+}
+
+.graph1 {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+.wrapper_gallery {
+  background-color: #6EBEC7;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer_ul {
+  padding-left: 20px;
+  padding-right: 10px;
+  list-style-type: none;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+
+.footer_ul a {
+  display: inline-block;
+}
+
+.btn-sm {
+  font-weight: 900;
+  width: 150px;
+  display: inline-block;
+  color: black;
+}
+
+.inline1, .inline2 {
+  display: inline;
+}
+
+.inline2 {
+  color: black;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.footer_img {
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.float_none_galerry {
+  float: none;
+
+}
