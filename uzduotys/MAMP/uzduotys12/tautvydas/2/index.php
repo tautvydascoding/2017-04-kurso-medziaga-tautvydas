@@ -23,8 +23,14 @@ labas
       $k = $k * $k;
       return $k;
     }
+    echo "2 kavadratu: " .  skaiciuotiKvadratu(2) . "<br>"; // "." sujungia stringus
 
+    // pabandymas su atmintiesadresais
+    function skaiciuotiKvadratu2(&$k) {
+      $k = $k * $k;
+    }
+    $sk = 3;
+    skaiciuotiKvadratu2($sk);
+    echo "3 kavadratu:  $sk  <br>"   ; // "." sujungia stringus
 
-
-    echo "2 kavadratu: " .  skaiciuotiKvadratu(2);
  ?>
