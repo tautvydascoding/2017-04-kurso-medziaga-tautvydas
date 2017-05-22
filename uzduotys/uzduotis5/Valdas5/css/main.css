@@ -1,13 +1,45 @@
-h1 {
-    color: red;
+
+
+header {background-color: #F2D767);
+}
+.nav-bar {background-color: rgba(239,236,155,0.79); font-family: "Comic Sans MS"; font-weight: bold;
+    min-height: 450px;
 }
 
-.container-fluid {
-    background-color: #EAECEE;
+h2 {
+    padding: 20px;
 }
-.container {
-    background-color: #FBFBFB;
+.navigation, .ads {
+    min-height: 200px;
+    background-color: #F2F0B0;
+    margin-bottom: 10px;
 }
-.col-lg-4, .col-lg-3  {
-    border: solid 1px #000;
+.article {
+    min-height: 350px;
+    background-color: #F2F0B0 ;
 }
+.footer {
+    margin-top: 10px;
+    min-height: 50px;
+    background-color: #F2D767;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sides {background-color: green;}
+.no-padding {
+    padding: 0;
+}
+

@@ -1,0 +1,13 @@
+
+.gallery{
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    color: red;
+    text-align: center;
+    min-height: 100px;
+    background-color: #9BCE0B;
+    position: relative;
+}
