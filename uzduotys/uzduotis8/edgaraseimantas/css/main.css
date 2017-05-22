@@ -1,0 +1,204 @@
+
+/* IDEA: ---------Header---------- */
+
+.hdMain {
+  width: 1000px;
+  height: 100px;
+  background-color: #21252B;
+}
+
+.hd {
+  height: inherit;
+  background-color: #505662;
+}
+
+.logoMain {
+  height: inherit;
+}
+
+.logo1 {
+  padding-top: 20px;
+}
+
+.navMain {
+  height: inherit;
+}
+
+.nav1 {
+  height: inherit;
+}
+
+.nav1 li {
+  display: inline-block;
+  padding-top: 40px;
+}
+
+
+.adsMain {
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.ads1 {
+  height: 100%;
+  width: auto;
+  padding: 0;
+  margin: 0 -1px 0 0; /* IDEA: -1px kad nepiestu background */
+  float: right;
+}
+/*--------------------------------------------*/
+.clear {
+  clear: both;
+}
+/* IDEA:  --------------CONTENT-------------*/
+
+.content {
+  width: 1000px;
+}
+
+.padTB {
+  
+}
+
+/* IDEA: CENTER AD------------------ */
+
+.centerad {
+  height: 200px;
+  background-image: url("http://orig05.deviantart.net/f241/f/2009/247/9/3/a_dreamy_world_95th_wide_by_grafixeye.jpg");
+  background-size: cover;
+  margin: 30px 0;
+}
+
+.overflow {
+  /*background: #282C3400;*/
+  background-color: rgba(40, 44, 52, 0.5);
+}
+
+.overflow:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* IDEA: --KOMANDOS */
+
+.high-inherit {
+  height: inherit;
+}
+.pos-relative {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*----------------------*/
+
+.gallery {
+  min-height: 400px;
+  margin-bottom: 10px;
+}
+
+.graph {
+  min-height: 250px;
+  border: 2em;
+}
+
+.ads {
+  min-height: 250px;
+  text-align: justify;
+}
+
+.pad1, .pad2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content_galerry {
+  min-height: 400px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #6EBEC7;
+  min-height: 250px;
+  margin-top: 10px;
+}
+
+.zeme1, .zeme2, .zeme3, .zeme4, .zeme5, .zeme6, .zeme7 {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+.zeme1, .zeme6 {
+  margin-top: 150px;
+}
+
+.zeme3 {
+  margin-top: 40px;
+}
+
+.ads, h1 {
+  margin-top: 0;
+}
+
+.ads {
+  padding: 5px;
+}
+
+.graph1 {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+.wrapper_gallery {
+  background-color: #6EBEC7;
+}
+
+.footer_ul {
+  padding-left: 20px;
+  padding-right: 10px;
+  list-style-type: none;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+
+.footer_ul a {
+  display: inline-block;
+}
+
+.btn-sm {
+  font-weight: 900;
+  width: 150px;
+  display: inline-block;
+  color: black;
+}
+
+.inline1, .inline2 {
+  display: inline;
+}
+
+.inline2 {
+  color: black;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.footer_img {
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.float_none_galerry {
+  float: none;
+}

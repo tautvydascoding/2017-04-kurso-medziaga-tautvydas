@@ -1,0 +1,17 @@
+h1 {
+  color: blue;
+}
+
+
+header {
+  background-color: red;
+  height: 300px;
+}
+section {
+  background-color: rgb(242, 222, 240);
+  height: 600px;
+}
+footer {
+  background-color: rgb(242, 222, 240);
+  height: 300px;
+}
