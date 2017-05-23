@@ -6,18 +6,7 @@
   </head>
   <body>
 
-      <?php
-          function testFinal () {
-            static  $count = 0;
-             $number = 0;
-             $count++;
-             $number++;
-             return "count: $count, number: $number";
-          }
-          echo testFinal()."<br />";
-          echo testFinal()."<br />";
-          echo testFinal()."<br />";
-          echo testFinal()."<br />";
+      <?php 
 
           // testuojame Recursion
           $number = 0; // globalus kintamasis

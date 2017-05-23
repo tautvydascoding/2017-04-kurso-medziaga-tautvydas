@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <?php $title = "Testuosime PHP class inheritance"; ?>
   <head>
     <meta charset="utf-8">
-    <title><?php echo $title; ?></title>
+    <title>Test class extensions</title>
   </head>
   <body>
-    <h1> <?php echo $title; ?>    </h1>
 
-    <?php
 
-       class Animal {
-         public $alive = true;
-         public $positionX = "35";
-         public $positionY = "212";
-         private $pinigine;
-         public function move() {
+      <?php
 
-         }
-         public function printText($text) {
-           echo $text;
-         }
-       }
-       class AnimalType extends Animal {
-         private $tipas = "zinduolis";
-         public $kaValgo = "zoleedis";
-       }
-       class Wolf extends AnimalType {
-         private $dantuSkaicius = "24";
-         public $vidutinisSvoris = "50";
-       }
+            class  Gyvunas   {
+              public $alive = true;
+              public $positionX;
+              public $positionY;
 
-       $gyvunas = new Animal;
-       $vilkas = new AnimalType;
-       echo "gyvunas alive: $gyvunas->alive, position: $gyvunas->positionX <br>";
-       echo "gyvunas: ".$gyvunas->printText('Valgo valgo...')."  <br>";
+            }
 
-        echo "Vilkas  tipas: $vilkas->kaValgo, alive: $vilkas->alive <br>";
-        echo "Ar gyvunas zino ka valgo: $gyvunas->kaValgo"; // nepasiekia
+            class Tipas extends Gyvunas {
+              public $rusis = "kate";
+              public $minta = "mesa";
+            }
 
-        $vilkiukas = new Wolf;
-        echo "ar vilkiukas gyvas: ".$vilkiukas->alive;
-    ?>
+            class Liutas extends Tipas {
+                private $name;
+                public $kailis = true;
+                public $spalva = "#a34baa";
+                public function medzioti() {
+                  // kazkoks kodas
+                }
+                private  function iToleta() {
+                  // kazkoks kodas
+                }
+                public function setName($xx) {
+                    $this->name = $xx;
+                }
+                public function getName() {
+                    return $this->name;
+                }
+            }
+
+            $simba = new Liutas();
+            $hdaras = new Liutas();
+            $lita = new Liutas();
+
+            // uzduotis 1: pakeisti visu triju liutu spalvas (ir pakeitimus atspausdinti)
+              // $simba->spalva = "violetine";
+              // $hdaras->spalva = "juodas";
+              // $lita->spalva = "ruda";
+              //
+              // echo "Simbos spalva: " . $simba->spalva . " <br />";
+              // echo "Hdarro spalva: " . $hdaras->spalva . " <br />";
+              // echo "Litos spalva: " . $lita->spalva . " <br />";
+              // print_r($simba);  // atspausdina visa obj.
+
+              // uzduotis2: Liuto klasei susikurti privatu kintamaji "Name". ir uskurti 2 funkcijas jo reiksmei pakeisti ir paimti "setName($x)", "getName()".
+
+              $simba->setName("Karolis");
+              echo " Simbos vardas: " . $simba->getName() . "<br />";
+              $simba->setName("Ana");
+              echo " Simbos vardas: " . $simba->getName() . "<br />";
+
+       ?>
+
   </body>
 </html>
