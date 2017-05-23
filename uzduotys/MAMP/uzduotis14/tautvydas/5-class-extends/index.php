@@ -27,6 +27,7 @@
                 public $spalva = "#a34baa";
                 public function medzioti() {
                   // kazkoks kodas
+                   iToleta(); // privati naudojama tik viduje
                 }
                 private  function iToleta() {
                   // kazkoks kodas
@@ -60,6 +61,36 @@
               $simba->setName("Ana");
               echo " Simbos vardas: " . $simba->getName() . "<br />";
 
+              // uzduotis 3:
+              // 1) sukurti dvi klases: User, Admin
+              // 2) User klase turi kintamuosius : username, password, rights ir funkcija Login($name, $pass)
+              // 3) Admin klase  funkcijas:  changeUserName($nm),  changeRights($rgt)
+
+
+              class User   {
+                  public $username = "Tim";
+                  protected $password = "xx3";
+                  private $rights = "moderator";
+                  public function Login($name, $pass) {
+                    // kazkoks kodas
+                  }
+              }
+              class Admin extends User  {
+                  public function changeUserName($nm) {
+                      $this->username = $nm;
+                  }
+                  public function  changeRights($rights) {
+                      $this->rights = $rights;
+                  }
+              }
+
+              $adminas = new Admin();
+
+              $adminas->changeRights("Admin");
+              echo "vartotjo teiese: $adminas->rights <br />";
+              // echo "vartotjo kodas: $adminas->password <br />";  // tai nera public / viesa reiksme
+
+              print_r($adminas);
        ?>
 
   </body>
