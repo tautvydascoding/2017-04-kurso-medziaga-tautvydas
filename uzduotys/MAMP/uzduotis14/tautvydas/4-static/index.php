@@ -48,7 +48,7 @@
             // $bag =   changeBagColor4( );
             // echo "bag color is : $bag   <br />";
 
-              function changeBagColor5 ( ) {
+           function changeBagColor5 ( ) {
                  $GLOBALS["manoBag"] = "red" ;
             }
             changeBagColor5 ( );
