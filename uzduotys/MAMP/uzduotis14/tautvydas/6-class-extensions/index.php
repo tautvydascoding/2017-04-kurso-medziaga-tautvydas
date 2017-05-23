@@ -10,8 +10,19 @@
     <?PHP
 
     // uzduotis:
-    // 
-
+    // 1) sukurti interface "Edit" : turi funkcijas, kurios nera aprasytos (privalomos)!
+        // changeName($a)
+        // isLogin()
+        // getName()
+    // 2) sukurti (abstrakcia) klase "User" :
+        // A) kuri turi privalomus kintamuosius:
+            // name, password
+        // B) neprivalomus kintamuosius:
+            //  createdDate, lastLogin
+        // C) privaloma funkcija "Loguot()"
+        // D) neprivaloma funkcija clearlastLoginTime()
+    // 3) sukurti klase Admin :
+        // A)  kuri panaudoja Edit ir User ~klases (implementuoti ir paveldeti)
     ?>
 
 
