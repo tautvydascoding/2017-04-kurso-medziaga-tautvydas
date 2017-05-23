@@ -9,6 +9,8 @@
     <h1> Test- perskaitysime faila</h1>
 
     <?php
+        echo "<h2> Spausdinu su PHP</h2>";
+
         $prekes = [];
         $i = 0 ;
 

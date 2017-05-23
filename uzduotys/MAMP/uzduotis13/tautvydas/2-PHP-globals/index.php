@@ -8,6 +8,53 @@
     <p>
       <?php
         $name = "uz klases - globalus";
+        $lname = "globalus";
+
+        class Motoroleris {
+            public $brand = "tttt";
+            public $name = "X2017";
+            private $topSpeed = 150;
+            private $isibegejimas = 7;
+
+            public function __construct($x) {
+                 $this->brand = $x;
+            }
+            public function setTopSpeed($x) {
+                $this->topSpeed = $x;
+            }
+            public function getTopSpeed() {
+               return  $this->topSpeed;
+            }
+            public function setGName ($y) {
+              global $name; // nuo sios akimirkos dirbus su globaliu knitamuoju
+               $name = $y;
+            }
+            public function setName ($y) {
+                $this->name = $y;
+            }
+        }
+        $moto = new Motoroleris("Natalija");
+        echo "Motoroleris: $moto->brand    <br>"; // js     moto.brand
+        $moto->setTopSpeed(160);
+        echo "Moto top speed:" . $moto->getTopSpeed() . "<br>";
+
+          $name = "vardas2";
+          echo $name . "<br />";
+          $moto->setGName("vardas3");
+          echo $name . "<br />";
+          echo "MOTOroleris: " . $moto->name . "<br />";
+
+
+
+
+
+
+
+
+          echo "    <br><br><br><br><br><br><br><br>"; // js
+
+
+
 
         class Person {
           public $isAlive = true;
