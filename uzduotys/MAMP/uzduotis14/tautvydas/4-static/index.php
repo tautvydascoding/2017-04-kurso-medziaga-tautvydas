@@ -7,32 +7,53 @@
   <body>
 
       <?php
-          function testFinal () {
-            static  $count = 0;
-             $number = 0;
-             $count++;
-             $number++;
-             return "count: $count, number: $number";
-          }
-          echo testFinal()."<br />";
-          echo testFinal()."<br />";
-          echo testFinal()."<br />";
-          echo testFinal()."<br />";
+          echo "<h1>Testuojames Static kintamuosius</h1>";
 
-          // testuojame Recursion
-          $number = 0; // globalus kintamasis
-          function countNumber($kiekKartuPaleisti) {
-              global $number;
-              $number += 2; // $number = $number + 2;
+          function testStatic() {
+              static $data = 1;
+              $skaicius = 1;
 
-              echo "nr: $number  <br />";
-              if( $number < $kiekKartuPaleisti) {
-                countNumber($kiekKartuPaleisti);
-              }
-              echo "nr: $number  <br />";  // suveiks tik kai visos f-jos pabaigs darba
+              $data++;
+              $skaicius++;
+
+              echo "PO. data: $data   skaicius:  $skaicius   <br>";
           }
-          countNumber(100);
-          echo $number."<br />";
+
+          testStatic();
+          testStatic();
+          testStatic();
+          testStatic();
+
+            // ----- testuojame globalius
+            $bag = "melyna";  // globalus kintamasis
+
+            // nepakeicia globalaus kintamojo
+            function changeBagColor() {
+                  $bag = "red";
+            }
+            // keicia globalu kintamaji
+            function changeBagColor2() {
+                  global $bag;
+                  $bag = "blue";
+            }
+            function changeBagColor3(&$x) {
+                  $x = "black";
+            }
+            // changeBagColor3($bag);
+            // echo "bag color is : $bag   <br />";
+
+            function changeBagColor4 ( ) {
+                   return "white";
+            }
+            // $bag =   changeBagColor4( );
+            // echo "bag color is : $bag   <br />";
+
+              function changeBagColor5 ( ) {
+                 $GLOBALS["manoBag"] = "red" ;
+            }
+            changeBagColor5 ( );
+            $bag =   $GLOBALS["manoBag"];
+              echo $bag;
 
       ?>
 
