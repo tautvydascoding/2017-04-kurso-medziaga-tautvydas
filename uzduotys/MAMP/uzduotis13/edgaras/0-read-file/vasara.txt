@@ -1,0 +1,16 @@
+Astronominio pavasario pradžia Pietų pusrutulyje yra momentas, kai ekliptika judančios Saulės centras pereina per dangaus pusiaują pavasario lygiadienio taške (kovo 20−21 d.). Tuo momentu abiejuose Žemės pusrutuliuose (išskyrus poliarines sritis) dienos ir nakties trukmė beveik lygi.
+
+Astronominės vasaros pradžia Žemės Šiaurės pusrutulyje ir astronominės žiemos pradžia Pietų pusrutulyje yra momentas, kai Saulės centras pereina per ekliptikos tašką, esantį toliausiai į šiaurę nuo dangaus pusiaujo (birželio 21−22 d.). Tuo momentu Žemės Šiaurės pusrutulyje diena būna ilgiausia, o Pietų pusrutulyje − trumpiausia.
+
+Astronominio rudens pradžia Žemės Šiaurės pusrutulyje ir astronominio pavasario pradžia Pietų pusrutulyje yra momentas, kai Saulės centras vėl pereina per dangaus pusiaują, bet jau rudens lygiadienio taške (rugsėjo 22−23 d.). Tuo momentu abiejuose Žemės pusrutuliuose dienos ir nakties trukmė beveik lygi.
+
+Astronominės žiemos pradžia Žemės Šiaurės pusrutulyje ir astronominės vasaros pradžia Pietų pusrutulyje yra momentas, kai Saulės centras pereina per ekliptikos tašką, esantį toliausiai į pietus nuo dangaus pusiaujo (gruodžio 21−22 d.). Tuo momentu Žemės Šiaurės pusrutulyje diena būna trumpiausia, Pietų pusrutulyje − ilgiausia.
+
+Dėl to, kad Žemė skrieja elipsine orbita aplink Saulę netolygiai, metų laikų trukmė nevienoda. Arčiausiai Saulės Žemė būna sausio pradžioje, kai eina per perihelį ir skrieja greičiausiai. Dėl to Šiaurės pusrutulyje astronominė žiema yra trumpiausias metų laikas, o astronominė vasara − ilgiausias (Šiaurės pusrutulyje astronominis pavasaris trunka ~92,8 d, astronominė vasara ~93,6 d, astronominis ruduo ~89,8 d, astronominė žiema ~89,0 d). Dėl tos pačios priežasties Šiaurės pusrutulyje vasaros pusmetis (pavasaris ir vasara]]) yra ~8 d ilgesnis už žiemos pusmetį.
+
+Liepa : 27
+Rugpjūtis : 23
+Rugsėjis : 19
+
+Dviratis xx2017 :: 169
+Dviratis xpz 2017 :: 229
