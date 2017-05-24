@@ -27,6 +27,12 @@ create TABLE pacients (
      doctor_id INT(6) NOT NULL
      );
 
+create TABLE img (
+     id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(60) not NULL,
+     doctor_id INT(6) NOT NULL
+     );
+
 // -------SQL komandos----------------------
 ` - geros kabutes
 ' - geros kabutes
@@ -47,8 +53,19 @@ VALUES (value1, value2, value3, ...);
 INSERT INTO Customers (CustomerName, City, Country)
 VALUES ('Cardinal', 'Stavanger', 'Norway');
 
-//-----------------------
+//-------------DOCTORS----------
 INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
 INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');
-//-----------------------------
+//-------------PACIENTS---------------
 INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');
+INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros', '2');
+INSERT INTO pacients  VALUES  ('', 'Ana', 'Tomson', '2');
+INSERT INTO pacients  VALUES  ('', 'Tom', 'Alis', '3');
+INSERT INTO pacients  VALUES  ('', 'Karis', 'Katis', '1');
+INSERT INTO pacients  VALUES  ('', 'Jo', 'Oporas', '5');
+//-------------IMG---------------
+INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
+INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');
+INSERT INTO img  VALUES  ('', 'pic-456.jpg', '3');
+INSERT INTO img  VALUES  ('', 'pic-4234234.GIF', '2');
+INSERT INTO img  VALUES  ('', 'pic-4622.GIF', '4');
