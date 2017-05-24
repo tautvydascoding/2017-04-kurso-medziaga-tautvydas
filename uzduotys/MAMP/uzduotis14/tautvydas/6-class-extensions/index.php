@@ -35,6 +35,7 @@
           public $name, $password , $createdDate, $lastLogin;
 
           abstract public function  Loguot();   // ja tures realizuoti kazkas kitas
+
           public function clearlastLoginTime() {
             echo "Jusu duomensy isvalys";
           }
