@@ -12,10 +12,10 @@ SELECT USER, PASSWORD, password_expired FROM user;
  CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
 
- CREATE DATABASE IF NOT EXISTS 'ligonine' DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-
+ CREATE DATABASE IF NOT EXISTS `ligonine` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 
 // -------SQL komandos----------------------
+` - geros kabutes
 ' - geros kabutes
 ‘  - blogos kabutes
 
