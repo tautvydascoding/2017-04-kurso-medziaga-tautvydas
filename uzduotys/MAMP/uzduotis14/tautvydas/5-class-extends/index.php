@@ -14,6 +14,9 @@
               public $positionX;
               public $positionY;
 
+              function printA($xx) {
+                echo $xx;
+              }
             }
 
             class Tipas extends Gyvunas {
@@ -25,8 +28,14 @@
                 private $name;
                 public $kailis = true;
                 public $spalva = "#a34baa";
+
+                // overwriting
+                function printA($xx) {
+                  echo $xx . $xx . $xx;
+                }
                 public function medzioti() {
                   // kazkoks kodas
+                   iToleta(); // privati naudojama tik viduje
                 }
                 private  function iToleta() {
                   // kazkoks kodas
@@ -60,6 +69,38 @@
               $simba->setName("Ana");
               echo " Simbos vardas: " . $simba->getName() . "<br />";
 
+              $simba->printA(" ===Kastytis===  ");
+              // uzduotis 3:
+              // 1) sukurti dvi klases: User, Admin
+              // 2) User klase turi kintamuosius : username, password, rights ir funkcija Login($name, $pass)
+              // 3) Admin klase  funkcijas:  changeUserName($nm),  changeRights($rgt)
+
+
+              class User   {
+                  public $username = "Tim";
+                  protected $password = "xx3";
+                  private $rights = "moderator";
+                  public function Login($name, $pass) {
+                    // kazkoks kodas
+                  }
+              }
+              class Admin extends User  {
+                  public function changeUserName($nm) {
+                      $this->username = $nm;
+                  }
+                  public function  changeRights($rights) {
+                      $this->rights = $rights;
+                  }
+              }
+
+              $adminas = new Admin();
+
+              $adminas->changeRights("Admin");
+              echo "vartotjo teiese: $adminas->rights <br />";
+              // echo "vartotjo kodas: $adminas->password <br />";  // tai nera public / viesa reiksme
+              $adminas->username = "Aruolis";
+
+              print_r($adminas);
        ?>
 
   </body>
