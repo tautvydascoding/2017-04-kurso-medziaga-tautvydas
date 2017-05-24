@@ -1,0 +1,16 @@
+mysql> show databases; //
+
+use duomenuBazesPavadinimas;
+Database changed
+
+mysql> show tables;
+
+
+SELECT USER, PASSWORD, password_expired FROM user;
+
+CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
+ GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
+
+// -------SQL komandos----------------------
+' - geros kabutes
+‘  - blogos kabutes
