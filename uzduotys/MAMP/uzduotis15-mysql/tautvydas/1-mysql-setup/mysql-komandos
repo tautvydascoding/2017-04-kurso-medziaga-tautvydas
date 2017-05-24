@@ -12,7 +12,13 @@ SELECT USER, PASSWORD, password_expired FROM user;
  CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
 
- CREATE DATABASE IF NOT EXISTS `ligonine` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+ create TABLE doctors (
+      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(30) not NULL,
+      lname VARCHAR(30) NOT NULL);
+
 
 // -------SQL komandos----------------------
 ` - geros kabutes
