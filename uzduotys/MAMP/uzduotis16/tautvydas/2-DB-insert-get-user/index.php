@@ -40,8 +40,13 @@
                echo "ERROR: createDoctor() - sukurti daktaro nepavyko:  ";
              }
         }
-
         createDoctor($connection, "Bill", "Kolt" );
+
+        // uzduotis 2:  sukurti f-ja, kuri grazina visus daktarus    "getDoctors()"
+
+        // uzduotis 3:  sukurti f-ja, kuri grazina nurodyta daktara  "getDoctor($id)"
+
+        // uzduotis 4:  sukurti f-ja, kuri pakeicia nurodyto daktaro reiksmes "updateDoctor"
      ?>
 
   </body>
