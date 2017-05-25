@@ -26,19 +26,20 @@
         //           $pLName,
         //           $doct_id
         //         );
-        // $query = sprintf(
-        //         "INSERT INTO pacients
-        //           VALUES ('', '%s', '%s', '%s')",
-        //           mysqli_real_escape_string($connect, $pName),
-        //           mysqli_real_escape_string($connect, $pLName),
-        //           mysqli_real_escape_string($connect, $doct_id)
-        //         );
-        $query =  "INSERT INTO pacients
-                  VALUES ('',
-                    mysqli_real_escape_string($connect, $pName),
-                    mysqli_real_escape_string($connect, $pLName),
-                    mysqli_real_escape_string($connect, $doct_id)
-                  )";
+        $query = sprintf(
+                "INSERT INTO pacients
+                  VALUES ('', '%s', '%s', '%s')",
+                  mysqli_real_escape_string($connect, $pName),
+                  mysqli_real_escape_string($connect, $pLName),
+                  mysqli_real_escape_string($connect, $doct_id)
+                );
+        // neveikia siuo metu
+        // $query =  "INSERT INTO pacients
+        //           VALUES ('',
+        //             " .  mysqli_real_escape_string($connect, $pName) . ",
+        //             " .   mysqli_real_escape_string($connect, $pLName). ",
+        //             " .   mysqli_real_escape_string($connect, $doct_id)
+        //           .")";
 
         $arPavyko = mysqli_query($connect, $query);
         if (!$arPavyko) {
