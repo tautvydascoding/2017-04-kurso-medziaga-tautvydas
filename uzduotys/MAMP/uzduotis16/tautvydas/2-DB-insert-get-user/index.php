@@ -51,21 +51,31 @@
               return null;
           }
         }
-
-        $doctors = getDoctors($connection);
-
-        $eil = mysqli_fetch_assoc($doctors);
-        while( $eil) {
-          // print_r($eil);
-          // echo "<br />";
-          echo "Username: " . $eil['name']." Lastname:  ".$eil['lname']."<br>";
-          $eil = mysqli_fetch_assoc($doctors);
-        }
-
+        // $doctors = getDoctors($connection);
+        // $eil = mysqli_fetch_assoc($doctors);
+        // while( $eil) {
+        //   // print_r($eil);
+        //   // echo "<br />";
+        //   echo "Username: " . $eil['name']." Lastname:  ".$eil['lname']."<br>";
+        //   $eil = mysqli_fetch_assoc($doctors);
+        // }
 
         // uzduotis 3:  sukurti f-ja, kuri grazina nurodyta daktara  "getDoctor($connect,$id)"
+        function getDoctor($connect, $id) {
+            $sql = "SELECT * FROM doctors WHERE id = $id";
+            $result = mysqli_query($connect, $sql );
+            if ($result == false) {
+                echo "ERROR: tokio daktaro nera";
+            }
+            return $result;
+        }
+        // $doctor = getDoctor($connection, 18);
+        // $doc = mysqli_fetch_assoc($doctor);
+        // echo "Doctor name:" .  $doc['name'] . " Last name:" . $doc['lname'];
+
 
         // uzduotis 4:  sukurti f-ja, kuri pakeicia nurodyto daktaro reiksmes "updateDoctor"
+        
      ?>
 
   </body>
