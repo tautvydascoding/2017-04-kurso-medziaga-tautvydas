@@ -29,6 +29,9 @@
           // sukurti nauja pacienta "Just", "Sem" , priskirta pirmam daktarui
 
           // $sql = "INSERT INTO doctors VALUES ('', 'Karl', 'Tomson')";
+          // $sql = "INSERT INTO doctors ( id, name, lname) VALUES ('', 'Karl', 'Tomson')";
+          $sql = "INSERT INTO pacients ( id, name, lname, doctor_id) VALUES ('', 'Just', 'Sem', '1')";
+
 
           $arPavykoSQL = mysqli_query($connection, $sql );
 
