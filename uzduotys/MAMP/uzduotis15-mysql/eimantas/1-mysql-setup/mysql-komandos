@@ -1,0 +1,35 @@
+mysql> show databases; //
+
+use duomenuBazesPavadinimas;
+Database changed
+
+mysql> show tables;
+
+
+SELECT USER, PASSWORD, password_expired FROM user;
+
+ // username - pas kai kuriuos negali tureti skaiciu!!!
+ CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
+ GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
+
+ CREATE DATABASE IF NOT EXISTS `ligonine` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+// -------SQL komandos----------------------
+` - geros kabutes
+' - geros kabutes
+‘  - blogos kabutes
+
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+WHERE condition1 OR condition2 OR condition3 ...;
+WHERE NOT condition;
+ORDER BY column1, column2, ... ASC|DESC;
+ORDER BY Country ASC, CustomerName DESC;
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');

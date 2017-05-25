@@ -1,0 +1,207 @@
+html {
+  height: 100%;
+}
+
+body {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+
+/*______________________pagrindiniu elementu aukstis ir paddingas________________________*/
+
+.bodyHeight, .row, .lefNavCol, .midScreenCol, .rightNavCol {
+  height: 100%;
+}
+
+.lefNavCol, .midScreenCol, .rightNavCol {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.middleRow, .middleRowTop, .middleRowBottom {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/*___________________________________ekrano padalinimas i 3 stulpelius___________________*/
+
+.NavContact {
+  /*background-color: #C2CE89;*/
+  height: 100%;
+  width: 100%;
+}
+
+.middleScreen {
+  height: 100%;
+  width: 100%;
+}
+
+.NavAbout {
+  /*background-color: #464290;*/
+  height: 100%;
+  width: 100%;
+}
+/*__________________________________Left Nav Contacts____________________________________*/
+
+.NavContact {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.lefNavCol {
+  height: 100%;
+  max-width: 100%;
+}
+
+
+.charleftCo, .charleftO, .charleftN, .charleftTs, .charleftA, .charleftT, .charleftC {
+  /*letter-spacing: 0;*/
+  position: relative;
+  -webkit-transform: translate(-50%) rotate(90deg);
+  -moz-transform: translate(-50%) rotate(90deg);
+  -o-transform: translate(-50%) rotate(90deg);
+  -ms-transform: translate(-50%) rotate(90deg);
+  transform-origin: center;
+  top: 30%;
+  left: 50%;
+}
+
+/*_________________________________________Right Nav About__________________________________*/
+
+.NavAbout {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.rightNavCol {
+  height: 100%;
+  max-width: 100%;
+}
+
+.charRightA, .charRightB, .charRightO, .charRightU, .charRightT {
+  position: relative;
+  -webkit-transform: translate(-50%) rotate(-90deg);
+  -moz-transform: translate(-50%) rotate(-90deg);
+  -o-transform: translate(-50%) rotate(-90deg);
+  -ms-transform: translate(-50%) rotate(-90deg);
+  transform-origin: center;
+  top: 35%;
+  left: 50%;
+}
+
+/*_______________________________________Top Nav______________________________________________*/
+
+.TopNav {
+  height: 100%;
+  max-width: 100%;
+}
+
+.NavPersonalBlog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.charTopP, .charTopE, .charTopR, .charTopS, .charTopO, .charTopN, .charTopA, .charTopL, .charTopB, .charTopL2, .charTopO2, .charTopG{
+  display: inline-block;
+  letter-spacing: 0;
+  position: relative;
+}
+
+/*______________________________BottomNav__________________________________________*/
+
+.NavProjects {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.charBotP, .charBotR, .charBotO, .charBotJ, .charBotE, .charBotC, .charBotT, .charBotS {
+  display: inline-block;
+  /*letter-spacing: 0;*/
+  position: relative;
+}
+
+.BottomNav {
+  height: 100%;
+  max-width: 100%;
+}
+
+/*_____________________________middle screen cointainer________________________________*/
+
+.middleRowTop {
+  height: 15%;
+  /*background-color: #b383bf;*/
+}
+
+.middleRow {
+  height: 70%;
+  background-color: #a13f50;
+  /*background-image: url("../img/3d-room-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+/*---perfect full screen background*/
+/*background: url("")no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
+
+.middleRowBottom {
+  height: 15%;
+  /*background-color: #931286;*/
+}
+
+
+/*______________________________media__________________________________________________-*/
+
+@media (max-width: 640px) and (min-width: 568px) {}
