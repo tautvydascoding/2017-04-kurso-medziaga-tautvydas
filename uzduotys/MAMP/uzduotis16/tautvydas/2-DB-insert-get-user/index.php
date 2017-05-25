@@ -21,13 +21,10 @@
               // jeigu neprisijunge
               if (!$c) {  // $c == false
                   die ("ERROR: nepavyko prisijungti prie DB " . mysqli_connect_error()) ;
-                  echo " bandau isvesti";
               }
               return $c;
         }
         $connection = jungtis_DB(SERVERNAME, USERNAME, PASSWORD, DB_NAME);
-
-        echo 'visdar bandau';
 
 
         // uzduotis 1:
@@ -40,9 +37,31 @@
                echo "ERROR: createDoctor() - sukurti daktaro nepavyko:  ";
              }
         }
-        createDoctor($connection, "Bill", "Kolt" );
+        // createDoctor($connection, "Bill", "Kolt" );
 
         // uzduotis 2:  sukurti f-ja, kuri grazina visus daktarus    "getDoctors()"
+        function getDoctors($con) {
+          $query = "SELECT * FROM doctors";
+          $result = mysqli_query($con, $query);
+
+          if( mysqli_num_rows($result) > 0 ) {  // tikriname ar radome kazka pagal uzklausa
+              return $result;
+          } else {
+              echo "Rasta 0 resultatu <br />";
+              return null;
+          }
+        }
+
+        $doctors = getDoctors($connection);
+
+        $eil = mysqli_fetch_assoc($doctors);
+        while( $eil) {
+          // print_r($eil);
+          // echo "<br />";
+          echo "Username: " . $eil['name']." Lastname:  ".$eil['lname']."<br>";
+          $eil = mysqli_fetch_assoc($doctors);
+        }
+
 
         // uzduotis 3:  sukurti f-ja, kuri grazina nurodyta daktara  "getDoctor($id)"
 
