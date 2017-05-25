@@ -63,7 +63,7 @@
         }
 
 
-        // uzduotis 3:  sukurti f-ja, kuri grazina nurodyta daktara  "getDoctor($id)"
+        // uzduotis 3:  sukurti f-ja, kuri grazina nurodyta daktara  "getDoctor($connect,$id)"
 
         // uzduotis 4:  sukurti f-ja, kuri pakeicia nurodyto daktaro reiksmes "updateDoctor"
      ?>
