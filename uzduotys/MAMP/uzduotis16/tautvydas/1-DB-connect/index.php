@@ -28,11 +28,12 @@
           // uzduotis2:
           // sukurti nauja pacienta "Just", "Sem" , priskirta pirmam daktarui
 
-          // $sql = "INSERT INTO doctors VALUES ('', 'Karl', 'Tomson')";
-          // $sql = "INSERT INTO doctors ( id, name, lname) VALUES ('', 'Karl', 'Tomson')";
+          // paprasti kintamieji (String) - kurie saugo SQl komanda
+          // $sql = "INSERT INTO doctors VALUES ('', 'Karl', 'Tomson'); ";
+          // $sql = "INSERT INTO doctors ( id, name, lname) VALUES ('', 'Karl', 'Tomson');";
           $sql = "INSERT INTO pacients ( id, name, lname, doctor_id) VALUES ('', 'Just', 'Sem', '1')";
 
-
+          // mysqli_query - atlieka SQL veiksmus (kurie aprasyti $sql kintamajam)
           $arPavykoSQL = mysqli_query($connection, $sql );
 
           if( $arPavykoSQL ) {
