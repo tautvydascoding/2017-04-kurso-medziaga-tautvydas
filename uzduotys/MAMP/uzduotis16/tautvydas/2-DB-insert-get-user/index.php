@@ -12,7 +12,7 @@
 
         define("SERVERNAME", "localhost");
         define("DB_NAME",   "ligonine4");
-        define( "USERNAME", "tautvydas04--"); //root
+        define( "USERNAME", "tautvydas04"); //root
         define("PASSWORD", "tratata");      // root
 
         // prijungia prie DB
@@ -29,9 +29,19 @@
 
         echo 'visdar bandau';
 
+
         // uzduotis 1:
         //  sukurti funkcija, kuri i DB ideda daktara
-        
+        function createDoctor($con, $name, $lastName) {
+             $s = "INSERT INTO doctors VALUES ('', '$name', '$lastName' );";
+             $arPavykoSQL = mysqli_query($con, $s);
+
+             if ($arPavykoSQL == false) {
+               echo "ERROR: createDoctor() - sukurti daktaro nepavyko:  ";
+             }
+        }
+
+        createDoctor($connection, "Bill", "Kolt" );
      ?>
 
   </body>
