@@ -23,7 +23,20 @@
             echo "ERROR:: ===Prisijungti prie DB nepavyko=== " .  mysqli_connect_error();
           }
 
+          // uzduotis1:
+          // ligonines DB-je, sukurti nauja daktara "doctors" lenteleje ("Karl", "Tomson")
+          // uzduotis2:
+          // sukurti nauja pacienta "Just", "Sem" , priskirta pirmam daktarui
 
+          // $sql = "INSERT INTO doctors VALUES ('', 'Karl', 'Tomson')";
+
+          $arPavykoSQL = mysqli_query($connection, $sql );
+
+          if( $arPavykoSQL ) {
+            echo " SQL pavyko ivykdyti";
+          } else {
+            echo "ERROR:: SQL nepavyko ivykdyti!!!" .  mysqli_connect_error();
+          }
        ?>
 
   </body>
