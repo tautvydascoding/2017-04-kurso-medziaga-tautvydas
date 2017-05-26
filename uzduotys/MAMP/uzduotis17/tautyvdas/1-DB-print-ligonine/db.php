@@ -17,5 +17,18 @@ function jungtis_DB($sname, $user, $pass, $dbName) {
       return $c;
 }
 
+// uzduotis 2:  sukurti f-ja, kuri grazina visus daktarus    "getDoctors()"
+function getDoctors($con) {
+  $query = "SELECT * FROM doctors
+          ORDER BY name, lname ASC";
+  $result = mysqli_query($con, $query);
+
+  if( mysqli_num_rows($result) > 0 ) {  // tikriname ar radome kazka pagal uzklausa
+      return $result;
+  } else {
+      echo "Rasta 0 resultatu <br />";
+      return null;
+  }
+}
 
  ?>
