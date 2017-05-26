@@ -5,4 +5,5 @@
 
     $connection = jungtis_DB(SERVERNAME, USERNAME, PASSWORD, DB_NAME);
 
+    
  ?>
