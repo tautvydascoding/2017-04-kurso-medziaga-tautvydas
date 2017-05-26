@@ -56,7 +56,7 @@
       <div class="nextPageHolder">
         <a href="#thirdPage" class="scrollDown">
           <img alt="White Page Down Arrow" class="scroll-down-arrow" src="img/down-arrow-icon-1.png">
-          <span>Scroll Down</span>
+          <span>Scroll Down</span> 
         </a>
       </div>
     </div>
