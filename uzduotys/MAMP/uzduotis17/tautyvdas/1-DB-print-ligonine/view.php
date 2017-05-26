@@ -5,5 +5,11 @@
 
     $connection = jungtis_DB(SERVERNAME, USERNAME, PASSWORD, DB_NAME);
 
-    
+    $doctorArray = getDoctors($connection);
+
+    while($eil = mysqli_fetch_assoc($doctorArray)) {
+        echo "<h2>DOCTOR: " . $eil['id'] . "</h2>";
+        echo "<h3>" . $eil['name'] . " " . $eil['lname'] . "</h3>";
+    }
+
  ?>
