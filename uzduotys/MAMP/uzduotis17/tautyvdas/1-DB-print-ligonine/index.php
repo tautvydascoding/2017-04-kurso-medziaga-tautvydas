@@ -7,18 +7,18 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
   </head>
-  <?php
-      include("controler.php");
-  ?>
+
   <body>
+
     <section>
       <h1>Pagrindinis puslapis</h1>
 
       <div class="container">
         <?php
-            include("article.php");
+            include("view.php");
          ?>
       </div>
+
       <div class="reklama">
         asfdadsf
       </div>
