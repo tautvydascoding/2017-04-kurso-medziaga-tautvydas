@@ -52,14 +52,14 @@
               return null;
           }
         }
-        // $doctors = getDoctors($connection);
-        // $eil = mysqli_fetch_assoc($doctors);
-        // while( $eil) {
-        //   // print_r($eil);
-        //   // echo "<br />";
-        //   echo "Username: " . $eil['name']." Lastname:  ".$eil['lname']."<br>";
-        //   $eil = mysqli_fetch_assoc($doctors); // paima sekancia "eilute" / masyva
-        // }
+        $doctors = getDoctors($connection);
+        $eil = mysqli_fetch_assoc($doctors);
+        while( $eil) {
+          // print_r($eil);
+          // echo "<br />";
+          echo "Username: " . $eil['name']." Lastname:  ".$eil['lname']."<br>";
+          $eil = mysqli_fetch_assoc($doctors); // paima sekancia "eilute" / masyva
+        }
 
         // uzduotis 3:  sukurti f-ja, kuri grazina nurodyta daktara  "getDoctor($connect,$id)"
         function getDoctor($connect, $id) {
