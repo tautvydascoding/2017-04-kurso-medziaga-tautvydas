@@ -7,9 +7,7 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
   </head>
-  <?php
-      include("controler.php");
-  ?>
+
   <body>
 
     <section>
