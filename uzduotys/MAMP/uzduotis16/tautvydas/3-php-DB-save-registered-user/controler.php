@@ -2,40 +2,61 @@
 
       // ================= Formos duomenu israsymas i DB ========
 
-      $db_username = "root"; // root
-      $db_password = "root"; // root
+            // uzdavinys:
+            // issaugoti paciento duomneis is registracijos formos DB
+
+            
+      $db_username = "tautvydas04"; // root
+      $db_password = "tratata"; // root
       $db_servername = "localhost";
-      $db_name = "testtautvydas";
+      $db_name = "ligonine4";
 
-      $con  = mysqli_connect($db_servername, $db_username, $db_password, $db_name );
+      $connnection  = mysqli_connect($db_servername, $db_username, $db_password, $db_name );
 
-      if(  $con == false ) {
+      if(  $connnection == false ) {
         // echo "Ivyko klaida.  ".mysqli_connect_error();
         die ("ivyko klaida".mysqli_connect_error());
       } else {
-        echo "Sekmingai Prisijungta prie duomenu bazes";
+        echo "Sekmingai Prisijungta prie duomenu bazes <br>";
       }
 
+      function createPacient($connect, $pName, $pLName, $doct_id) {
+        // $query = "INSERT INTO pacients
+        //           VALUES ('', '$pName', '$pLName', '$doct_id')";
+        // $query = sprintf(
+        //         "INSERT INTO pacients
+        //           VALUES ('', '%s', '%s', '%s')",
+        //           $pName,
+        //           $pLName,
+        //           $doct_id
+        //         );
+        $query = sprintf(
+                "INSERT INTO pacients
+                  VALUES ('', '%s', '%s', '%s')",
+                  mysqli_real_escape_string($connect, $pName),
+                  mysqli_real_escape_string($connect, $pLName),
+                  mysqli_real_escape_string($connect, $doct_id)
+                );
+        // neveikia siuo metu
+        // $query =  "INSERT INTO pacients
+        //           VALUES ('',
+        //             " .  mysqli_real_escape_string($connect, $pName) . ",
+        //             " .   mysqli_real_escape_string($connect, $pLName). ",
+        //             " .   mysqli_real_escape_string($connect, $doct_id)
+        //           .")";
 
-       function insertUser ($connection, $username, $userlname )  {
-          $sql = sprintf(
-            "INSERT INTO users ( name, lname ) VALUES ('%s', '%s' ) ",
+        $arPavyko = mysqli_query($connect, $query);
+        if (!$arPavyko) {
+          echo "ERROR:: nepavyko sukurti paciento";
+        }
+      }
 
-            mysqli_real_escape_string($connection, $username) ,
-            mysqli_real_escape_string($connection, $userlname)
-          );
+      createPacient ($connnection,  $_POST['firstname'],  $_POST['lastname'],  $_POST['doct_id']);
 
-          // idedame i DB
-           $arPavykoSQL = mysqli_query($connection, $sql );
 
-           if( $arPavykoSQL ) {
-             echo " Pavyko ivykdyti";
-           } else {
-             echo " Nepavyko ivykdyti!!!";
-           }
-       }
+    //  echo  "Last name: " . $_POST['lastname'];
+    //  print_r($_POST);
 
-       insertUser($con, trim($_POST['firstname']), $_POST['lastname'] );
 
 
  ?>

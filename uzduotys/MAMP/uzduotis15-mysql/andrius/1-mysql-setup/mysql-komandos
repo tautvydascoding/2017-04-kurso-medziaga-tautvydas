@@ -1,0 +1,61 @@
+=============MYSQL komandos=============
+
+1) mysql> show databases;
+2) use duomenuBazesPavadinimas; ====(pvz mysql> use mysql; - mysql duombazes pavadinimas)
+3) mysql> show tables; ===(parodo kokias lenteles saugo pasirinkta DB)
+4) mysql> SELECT * FROM user; ===(* kad paima viska, user-duombazes pavadinimas)
+5) mysql> SELECT USER, PASSWORD FROM user; ===(paima user ir password is duombazes user)
+6) mysql> CREATE USER 'andriusk'@'localhost' IDENTIFIED BY 'blablabla';  ===(sukuria nauja user, andriusk su psw blablabla, kai kada gali neleisti naudoti skaiciu username'e)
+7) mysql> GRANT ALL PRIVILEGES ON * . * TO 'andriusk'@'localhost' WITH GRANT OPTION; ===( useriui duota root teises)
+8) mysql> CREATE DATABASE IF NOT EXISTS ligonine4 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; ===(sukurem nauja DB- ligonine4)
+
+
+===create new table===
+CREATE TABLE MyGuests (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, // ==UNSIGNED AUTO_INCREMENT PRIMARY KEY== uzdeda rakta ant "id" stulpelio!!!!!!!
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+reg_date TIMESTAMP
+)
+===insert data===
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+===update data====
+UPDATE table_name
+SET column1=value, column2=value2,...
+WHERE some_column=some_value
+
+===delete data====
+DELETE FROM table_name
+WHERE some_column = some_value
+
+================================================================
+UZDUOTIS surasti paciento tomo, daktaro pavarde (is musu lenteliu doctors, pacients)
+
+1 budas su INNER JOIN
+     SELECT doctors.lname
+    -> FROM doctors
+    -> INNER JOIN pacients ON pacients.doctor_id = doctors.id
+    -> WHERE pacients.name = 'Tomas';
+2 budas be INNER JOIN
+    SELECT doctors.lname
+    -> FROM pacients, doctors
+    -> WHERE pacients.name = 'Tomas' AND pacients.doctor_id = doctors.id;
+
+
+
+=============SQL komnados=============
+` - geros kabutes
+' -geros kabutes
+‘ -blogos kabutes-> tokiu negalima naudoti
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+WHERE condition1 OR condition2 OR condition3 ...;
+WHERE NOT condition;
+WHERE CustomerName LIKE 'a%';  // PRASIDEDA "a" zodis
+ORDER BY column1, column2, ... ASC|DESC;
+ORDER BY Country ASC, CustomerName DESC;
