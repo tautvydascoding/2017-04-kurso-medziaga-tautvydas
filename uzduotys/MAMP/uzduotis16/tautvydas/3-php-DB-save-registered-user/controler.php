@@ -2,6 +2,10 @@
 
       // ================= Formos duomenu israsymas i DB ========
 
+            // uzdavinys:
+            // issaugoti paciento duomneis is registracijos formos DB
+
+            
       $db_username = "tautvydas04"; // root
       $db_password = "tratata"; // root
       $db_servername = "localhost";
@@ -49,8 +53,6 @@
 
       createPacient ($connnection,  $_POST['firstname'],  $_POST['lastname'],  $_POST['doct_id']);
 
-      // uzdavinys:
-      // issaugoti paciento duomneis is registracijos formos DB
 
     //  echo  "Last name: " . $_POST['lastname'];
     //  print_r($_POST);
