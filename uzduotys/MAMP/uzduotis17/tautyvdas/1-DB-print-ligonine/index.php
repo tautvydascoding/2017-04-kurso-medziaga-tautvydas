@@ -11,14 +11,16 @@
       include("controler.php");
   ?>
   <body>
+
     <section>
       <h1>Pagrindinis puslapis</h1>
 
       <div class="container">
         <?php
-            include("article.php");
+            include("view.php");
          ?>
       </div>
+
       <div class="reklama">
         asfdadsf
       </div>
