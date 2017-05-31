@@ -130,3 +130,9 @@ float:right;
   padding: 50px 50px;
   text-decoration: none;
 }
+.background-img {
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://9to5mac.files.wordpress.com/2013/06/mail.png);
+}
