@@ -1,0 +1,210 @@
+body {
+  /*font: 400 15px Lato, sans-serif;*/
+  /*font-family: 'Open Sans', sans-serif;*/
+  font: 800 15px Open Sans, sans-serif;
+  line-height: 1.8;
+  /*color: #818181;*/
+}
+
+strong { font-weight: bold; }
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.apie h2{
+color: #fff;
+}
+
+
+/*h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}*/
+
+
+.navbar-default .navbar-nav>li>a {
+  color: #eee;
+}
+
+.navbar-default .navbar-brand {
+  padding-top: 0;
+  color: #eee;
+}
+
+.navbar {
+  height: 60px;
+  margin-bottom: 0;
+  background-color: #005500;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/*.navbar li a, .navbar .navbar-brand {
+color: #fff !important;
+}*/
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #005500 !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+border-color: transparent;
+color: #fff !important;
+}
+
+
+.jumbotron {
+  padding: 100px 25px;
+  background-image: linear-gradient(to right, black 5%,white 100%), url('../images/pcb2.png');
+  background-blend-mode:multiply;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  /*font-family: Montserrat, sans-serif;*/
+}
+
+.container-fluid {
+  padding: 20px 50px;
+}
+
+.bg-grey {
+  background-color: #f8f8f8;
+}
+
+.apie {
+  color: #ffffff;
+  min-height: 300px;
+  padding: 0px 50px;
+  background-image: linear-gradient(to right, black 5%,white 90%), url('../images/pcb2.png');
+  background-blend-mode:multiply;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
+
+/*.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}*/
+
+/*.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}*/
+
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #005500;
+}
+
+.carousel-indicators li {
+  border-color: #005500;
+}
+
+.carousel-indicators li.active {
+  background-color: #005500;
+}
+
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
+}
+
+
+.kontaktai {
+    color: #ffffff;
+    min-height: 300px;
+    padding: 0px 50px;
+    /*background-color: rgb(50,180,50);*/
+    background-image: url("pcb2.png");
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #005500;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .mobilenavbar{
+    background-color: #005500;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+  .mobilenavbar{
+    background-color: #005500;
+  }
+}
