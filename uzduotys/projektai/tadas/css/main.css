@@ -1,0 +1,408 @@
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      width: 100%;
+      /*background-color: #DADADA;*/
+    }
+
+    header {
+      top: 0;
+      width: 100%;
+      margin: 0;
+      background-color: #FFFFFF;
+    }
+
+    .logo {
+      display: block;
+      margin: auto;
+      width: 250px;
+    }
+
+    .logo-vestuvems {
+      display: block;
+      margin: auto;
+      width: 250px;
+    }
+
+    .logo-pobuviams {
+      display: block;
+      margin: auto;
+      width: 250px;
+    }
+
+    .logo-vaiku_sventems {
+      display: block;
+      margin: auto;
+      width: 250px;
+    }
+
+    .logo-Dovanos {
+      display: block;
+      margin: auto;
+      width: 250px;
+    }
+
+    .Draugaukime {
+      float: right;
+    }
+
+    .fa {
+      float: right;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  float: right;
+  background: #3B5998;
+  color: white;
+}
+
+    ul {
+      list-style-type: none;
+      margin: 50;
+      padding: 100;
+      overflow: hidden;
+      background-color: #FFFFFF;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-flex;
+      color: black;
+      text-align: center;
+      padding: 10px 85px;
+      text-decoration: none;
+    }
+
+   .row a:hover {
+      color: red;
+      text-decoration: none;
+    }
+
+    .navbar-a {
+      float: left;
+      display: block;
+      color: #111111;
+      text-align: left;
+      padding: 20px 90px;
+      text-decoration: none;
+    }
+
+
+    .PapPuslapiu-Meniu a {
+      color: black;
+      text-align: center;
+    }
+    .PapPuslapiu-Meniu a:active {
+      color: red;
+      text-align: center;
+    }
+
+
+    .PapPuslapiu-Meniu {
+      color: black;
+      text-align: center;
+      /*width: 160px;*/
+      /*padding: 10px 85px;*/
+      text-decoration: none;
+    }
+
+    a.active  {
+      color: red;
+    }
+
+    .plotis20proc {
+      display: inline-block;
+      color: black;
+      width: 20%;
+      text-align: center;
+    }
+    /* IDEA: starting content */
+    /** {box-sizing:border-box}*/
+    /* Slideshow container */
+
+
+
+        /*.thumbnail {margin-bottom:6px;}
+
+        .carousel-control.left, .carousel-control.right{
+          background-image:none;
+          margin-top:10%;
+          width:5%;
+    }*/
+
+
+
+
+
+    #myBtn {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 20px;
+      /* Place the button at the bottom of the page */
+      right: 30px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      border: none;
+      /* Remove borders */
+      outline: none;
+      /* Remove outline */
+      background-color: red;
+      /* Set a background color */
+      color: white;
+      /* Text color */
+      cursor: pointer;
+      /* Add a mouse pointer on hover */
+      padding: 15px;
+      /* Some padding */
+      border-radius: 10px;
+      /* Rounded corners */
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */
+    }
+
+
+
+
+
+
+
+
+
+
+    div.gallery {
+      background-color: #DADADA;
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .slideshow-container {
+      background-color: #DADADA;
+      top: 0;
+      width: 100%;
+      position: relative;
+      /*margin: 0;*/
+    }
+
+    .mySlides {
+      display: grid;
+    }
+    /* Next & previous buttons */
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    /* Position the "next button" to the right */
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+
+    .prev:hover, .next:hover {
+      background-color: rgb(255, 0, 0);
+    }
+    /* Caption text */
+
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      text-align: center;
+    }
+    /* Number text (1/3 etc) */
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    /* The dots/bullets/indicators */
+
+    .dot {
+      cursor: pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #FFFFFF;
+    }
+    /* Fading animation */
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+
+    .content_indexText {
+      background-color: #DADADA;
+      color: black;
+      text-align: left;
+      width: 60%;
+      text-decoration: none;
+    }
+
+
+    .footer_index {
+      border-style: groove;
+      border-width: 100%;
+      border-color: black;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+      background-color: #FFFFFF;
+      color: black;
+      text-align: left;
+      text-decoration: none;
+    }
+
+    .open-contacts-form {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 20%;
+  height: 3rem;
+  padding-top: 0;
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.open-contacts-form:hover, .open-contacts-form:focus, .open-contacts-form:active {
+  background-color: red;
+  color: white;
+}
+
+.open-contacts-form:active:focus {
+  background-color: red;
+  color: white;
+}
+
+.minHeight12 {
+  min-height: 12rem;
+}
+
+.formCss {
+  padding: 5px 5px;
+  margin-bottom: 10;
+  width: 20%;
+}
+
+input::placeholder, textarea::placeholder {
+color: rgba(95, 146, 1, 0.5);
+}
+
+
+.footer_PapPuslapiu {
+  border-style: groove;
+  border-width: 100%;
+  border-color: black;
+border-left: none;
+border-bottom: none;
+border-right: none;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+}

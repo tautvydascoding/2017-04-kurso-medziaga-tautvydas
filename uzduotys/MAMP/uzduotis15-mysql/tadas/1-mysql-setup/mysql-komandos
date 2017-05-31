@@ -1,0 +1,54 @@
+mysql> show databases; //
+
+use duomenuBazesPavadinimas;
+Database changed
+
+mysql> show tables;
+
+
+SELECT USER, PASSWORD, password_expired FROM user;
+
+ // username - pas kai kuriuos negali tureti skaiciu!!!
+ CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
+ GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
+
+ CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+
+//===========pvz============
+ create TABLE doctors (
+      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(30) not NULL,
+      lname VARCHAR(30) NOT NULL);
+create TABLE pacients (
+     id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(30) not NULL,
+     lname VARCHAR(30) NOT NULL,
+     doctor_id INT(6) NOT NULL
+     );
+
+// -------SQL komandos----------------------
+` - geros kabutes
+' - geros kabutes
+‘  - blogos kabutes
+
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+WHERE condition1 OR condition2 OR condition3 ...;
+WHERE NOT condition;
+ORDER BY column1, column2, ... ASC|DESC;
+ORDER BY Country ASC, CustomerName DESC;
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');
+
+//-----------------------
+INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
+INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');
+//-----------------------------
+INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');

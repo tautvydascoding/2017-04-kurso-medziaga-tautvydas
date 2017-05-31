@@ -1,62 +1,73 @@
-console.log("hello");
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 6000);
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
 
 
 
-// IDEA: uzduotis: isvesti dvi eilutes po 4 paveiksliukus i html
 
-document.write("<h2> Galerija </h2>");
 
-var img = '<img src="http://lol.tv3.lt/lols/images/11573_1325332014_6622/grazus-paveiksliukai-is-viso-pasaulio.jpg";alt="grazus paveikliukas" width="20%">  ';
 
-// for(t = 0; t < 8; t++) {
-// document.write(img);
-// if ( t === 3) {  // IDEA: //for (g = 0 ; g < 4; g++)
-// document.write("<br>");
-// }
-// }
+
+// $(document).ready(function() {
 //
-// // IDEA:
-
-
-
-// for (t = 0; t < 2; t++) {
-//   for (g = 0; g < 4; g++) {
-//     document.write(img);
-//   }
-//   document.write("<br>");
-// }
+//    /* activate the carousel */
+//    $("#modal-carousel").carousel({interval:false});
 //
-// var galerija = document.querySelector(".gallery");
-// galerija.style.backgroundColor = "red";
-// // galerija.appendChild(img);
-// galerija.innerHTML += img;
+//    /* change modal title when slide changes */
+//    $("#modal-carousel").on("slid.bs.carousel",       function () {
+//         $(".modal-title")
+//         .html($(this)
+//         .find(".active img")
+//         .attr("title"));
+//    });
 //
-// for (t = 0; t < 8; t++) {
+//    /* when clicking a thumbnail */
+//    $(".row .thumbnail").click(function(){
+//     var content = $(".carousel-inner");
+//     var title = $(".modal-title");
 //
-// galerija.innerHTML += img;
-// }
-
-// IDEA: uzduotis pakeisti h2 elemento spalva i melyna (naudojant tik js)
-
-document.querySelectorAll("h2")[0].style.color = "blue";
-// document.getElementById('id')
-// document.getElementsByClassName('className')
-// document.getElement('h2')
-
-document.write("<h3> Testavimas</h3>"); // IDEA: sukuriamas ir idedamas i html
-var button = createElement("div");
-button.innerHTML = "<button type='text' name='OK' value= 'Spausk'>" // IDEA: sukuriamas bet neidedamas i html
-galerija.appendChild(button);
-
-
-// var galerija = document.querySelector(".gallery");
-// galerija.style.backgroundColor = "blue";
-// // galerija.appendChild(button);
-// galerija.innerHTML += img;
+//     content.empty();
+//     title.empty();
 //
-// for (t = 0; t < 8; t++) {
+//   	var id = this.id;
+//      var repo = $("#img-repo .item");
+//      var repoCopy = repo.filter("#" + id).clone();
+//      var active = repoCopy.first();
 //
-// galerija.innerHTML += img;
-// }
-
-// IDEA: uzduotis
+//     active.addClass("active");
+//     title.html(active.find("img").attr("title"));
+//   	content.append(repoCopy);
+//
+//     // show the modal
+//   	$("#modal-gallery").modal("show");
+//   });
+//
+// });
