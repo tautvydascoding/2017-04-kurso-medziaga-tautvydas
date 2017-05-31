@@ -1,0 +1,633 @@
+html {
+  height: 100%;
+  background-color: #fff;
+}
+
+.bodyHome {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  /*border-color: #000;
+  border-style: solid;
+  border-width: 0.5em;*/
+  /*background: radial-gradient(#cff0ee, #fff);*/
+}
+
+/*______________________pagrindiniu elementu aukstis ir paddingas________________________*/
+
+.main-body, .bodyHeight, .lefNavCol, .midScreenCol, .rightNavCol {
+  height: 100%;
+}
+
+.lefNavCol, .midScreenCol, .rightNavCol {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.middleRow, .middleRowTop, .middleRowBottom {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/*___________________________________ekrano padalinimas i 3 stulpelius___________________*/
+
+.NavContact {
+  /*background-color: #C2CE89;*/
+  height: 100%;
+  width: 100%;
+}
+
+.middleScreen {
+  height: 100%;
+  width: 100%;
+}
+
+.NavAbout {
+  /*background-color: #464290;*/
+  height: 100%;
+  width: 100%;
+}
+
+
+/*__________________________________Left Nav Contacts____________________________________*/
+
+.NavContact {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  color: #000;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  display: block;
+  /*font-weight: 900;*/
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.lefNavCol {
+  height: 100%;
+  max-width: 100%;
+}
+
+.charleftCo, .charleftO, .charleftN, .charleftTs, .charleftA, .charleftT, .charleftC {
+  /*letter-spacing: 0;*/
+  position: relative;
+  -webkit-transform: translate(-50%) rotate(90deg);
+  -moz-transform: translate(-50%) rotate(90deg);
+  -o-transform: translate(-50%) rotate(90deg);
+  -ms-transform: translate(-50%) rotate(90deg);
+  transform-origin: center;
+  top: 30%;
+  left: 50%;
+}
+
+
+/*_________________________________________Right Nav About__________________________________*/
+
+.NavAbout {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  /*font-weight: 900;*/
+  display: block;
+  color: #000;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.rightNavCol {
+  height: 100%;
+  max-width: 100%;
+}
+
+.charRightA, .charRightB, .charRightO, .charRightU, .charRightT {
+  position: relative;
+  -webkit-transform: translate(-50%) rotate(-90deg);
+  -moz-transform: translate(-50%) rotate(-90deg);
+  -o-transform: translate(-50%) rotate(-90deg);
+  -ms-transform: translate(-50%) rotate(-90deg);
+  transform-origin: center;
+  top: 35%;
+  left: 50%;
+}
+
+
+/*_______________________________________Top Nav____________________________________*/
+
+.TopNav {
+  height: 100%;
+  max-width: 100%;
+}
+
+.NavPersonalBlog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  color: #000;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  /*font-weight: 900;*/
+  display: block;
+  -webkit-transform: translate(-51.5%, -50%);
+  -moz-transform: translate(-51.5%, -50%);
+  -ms-transform: translate(-51.5%, -50%);
+  -o-transform: translate(-51.5%, -50%);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.charTopP, .charTopE, .charTopR, .charTopS, .charTopO, .charTopN, .charTopA, .charTopL, .charTopB, .charTopL2, .charTopO2, .charTopG {
+  display: inline-block;
+  letter-spacing: 0;
+  position: relative;
+}
+
+
+/*______________________________BottomNav__________________________________________*/
+
+.NavProjects {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  color: #000;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  /*font-weight: 900;*/
+  display: block;
+  -webkit-transform: translate(-51.5%, -50%);
+  -moz-transform: translate(-51.5%, -50%);
+  -ms-transform: translate(-51.5%, -50%);
+  -o-transform: translate(-51.5%, -50%);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.charBotP, .charBotR, .charBotO, .charBotJ, .charBotE, .charBotC, .charBotT, .charBotS {
+  display: inline-block;
+  /*letter-spacing: 0;*/
+  position: relative;
+}
+
+.BottomNav {
+  height: 100%;
+  max-width: 100%;
+}
+
+
+/*_____________________________middle screen cointainer________________________________*/
+
+.middleRowTop {
+  height: 15%;
+  /*background-color: #b383bf;*/
+}
+
+.middleRcol {
+  height: 100%;
+  width: 33.3%;
+  padding: 0;
+}
+
+.middleRcol2 {
+  height: 100%;
+  width: 33.3%;
+  padding: 0;
+}
+
+.middleRcol3 {
+  height: 100%;
+  width: 33.3%;
+  padding: 0;
+}
+
+.middleRow {
+  height: 70%;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 20px;
+  background: url("../img/layer10.jpg")no-repeat fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-position: left bottom;
+}
+
+.contactsinfo {
+  height: 100%;
+  width: 100%;
+}
+
+.middleRowBottom {
+  height: 15%;
+  /*background-color: #931286;*/
+}
+
+#front-end {
+  text-align: center;
+  list-style-type: none;
+  top: 50%;
+  height: 100%;
+}
+
+.scene1 {
+  height: 100%;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.button0 {
+  position: absolute;
+  top:85%;
+  right: 44%;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D6DED3;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #373C3F}
+
+.button:active {
+  background-color: #373C3F;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+.button1 {
+  display: none;
+}
+
+
+/*---------------------------------canvas animation-----------------------------------------------*/
+
+#canvas {
+  position: absolute;
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+}
+
+.tlt {
+  height: 100%;
+  width: 95%;
+  position: absolute;
+  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  font-size: 20px;
+  font-family: 'Lobster', cursive, Arial, cursive;
+  text-align: justify;
+  opacity: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#canvas1 {
+  position: absolute;
+}
+
+.tlt1 {
+  height: 100%;
+  width: 95%;
+  position: absolute;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Lobster', cursive, Arial, cursive;
+  text-align: justify;
+  opacity: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#canvas2 {
+  position: absolute;
+
+}
+
+
+/*====================================PROJECTS CSS=================================*/
+.projBody {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  /*border-color: #000;
+  border-style: solid;
+  border-width: 0.5em;*/
+  /*background: radial-gradient(#cff0ee, #fff);*/
+  background-color: #fff;
+}
+
+
+.projContFluid, .projContFluid2 {
+  min-height: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.projMainRow {
+  min-height: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.projCol {
+  height: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.projContRow {
+  height: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.projContRowTop {
+  height: 80px;
+  width: 100%;
+  /*background-color: rgb(133, 5, 185);*/
+  margin-left: 0;
+  margin-right: 0;
+  /*background-color: #529de8;*/
+  z-index: -1;
+}
+
+.projContMid{
+  max-height: 100%;
+  width: 100%;
+  /*background-color: rgb(153, 252, 159);*/
+  margin-left: 0;
+  margin-right: 0;
+  background: url("../img/video.png")no-repeat fixed 100%;
+}
+
+.projContBottom {
+  height: 80px;
+  width: 100%;
+  /*background-color: rgb(180, 212, 28);*/
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.projMidBotCol,.projMidMidCol {
+  min-height: 100%;
+  width: 100%;
+}
+
+.projMidTopCol{
+  min-height: 100%;
+  width: 90%;
+  padding-right: 0;
+}
+
+.owl-theme:nth-child(1) {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
+.projGalleryRow1, .projGalleryRow2, .projGalleryRow3 {
+  min-height: 100%;
+  width: 100%;
+}
+
+.projGalleryCol1, .projGalleryCol2, .projGalleryCol3 {
+  min-height: 100%;
+  width: 100%;
+}
+
+.projProjects, .projProjects2 {
+  width: 100%;
+  height: 500px;
+}
+
+
+.NavProjects2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Righteous', cursive, Arial, cursive;
+  font-size: 24px;
+  color: #000;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  /*font-weight: 900;*/
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.bootstrapProj {
+  /*border-style: solid;*/
+  border-radius: 50px;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  /*position: absolute;*/
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.MobileFriendly {
+  font-size: 1.5em;
+  text-align: center;
+  color: #000;
+  border-style: solid;
+  background-color: rgb(219, 221, 211);
+  /*position: absolute;*/
+  /*transform: translateX(-80%);*/
+  font-family: 'Dancing Script', cursive;
+}
+
+.video-js {
+  -webkit-filter: brightness(30%);
+  background: grey;
+}
+.video-js:hover {
+  -webkit-filter: brightness(100%);
+  background: white;
+}
+
+.close {
+  position: fixed;
+  font-size: 2em;
+  color: black;
+  opacity: 1;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.closeXCol {
+  width: 5%;
+  height: 100%;
+  padding-left: 0;
+}
+
+/*-----------------------------------TweenMax---------------------------------------------*/
+#demo {
+  height:100%;
+  position:relative;
+}
+.box {
+  width:50px;
+  height:50px;
+  position:relative;
+  border-radius:6px;
+  margin-top:4px;
+  display:inline-block
+}
+
+.green{
+  background-color:#6fb936;
+}
+
+.orange {
+  background-color:#f38630;
+}
+.grey {
+  background-color:#989898;
+}
+
+
+
+/*-------------------------------------------media------------------------------------*/
+@media(max-width:768px) {
+
+.video-js{
+  max-width: 100%;
+  height: 250px;
+}
+
+.owl-carousel {
+display:none !important;
+}
+
+.middleRcol2 {
+  display: none;
+}
+
+.middleRcol, .middleRcol3 {
+  width: 50%;
+}
+
+.tlt1 {
+  height: 100%;
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-family: 'Lobster', cursive, Arial, cursive;
+  text-align: center;
+  opacity: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.tlt {
+  height: 100%;
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-family: 'Lobster', cursive, Arial, cursive;
+  text-align: center;
+  opacity: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.button1 {
+  display: block;
+  margin-left: 23%;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: #D6DED3;
+  border: none;
+  /*border-radius: 100px;*/
+  box-shadow: 0 4px #999;
+  width: 50%;
+}
+
+
+.button1:hover {background-color: #373C3F}
+
+.button1:active {
+  background-color: #373C3F;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+.charTopP, .charTopE, .charTopR, .charTopS, .charTopO, .charTopN, .charTopA, .charTopL, .charTopB, .charTopL2, .charTopO2, .charTopG {
+  position: static;
+}
+
+.charBotP, .charBotR, .charBotO, .charBotJ, .charBotE, .charBotC, .charBotT, .charBotS {
+  position: static;
+}
+
+.charRightA, .charRightB, .charRightO, .charRightU, .charRightT {
+  -webkit-transform: translate(-50%) rotate(-90deg);
+  -moz-transform: translate(-50%) rotate(-90deg);
+  -o-transform: translate(-50%) rotate(-90deg);
+  -ms-transform: translate(-50%) rotate(-90deg);
+  transform-origin: center;
+  top: 35%;
+  left: 50%;
+}
+
+#canvas1 {
+  width: 50px;
+}
+}
