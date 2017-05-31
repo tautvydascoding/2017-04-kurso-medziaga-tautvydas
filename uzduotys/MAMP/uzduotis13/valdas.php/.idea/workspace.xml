@@ -75,6 +75,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -89,13 +90,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../uzduotis14/valdas14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Projektaz1/Projektaz1" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
@@ -184,11 +184,12 @@
       <workItem from="1495463943229" duration="266000" />
       <workItem from="1495523242412" duration="541000" />
       <workItem from="1495534345592" duration="34000" />
+      <workItem from="1495797330517" duration="62000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14317000" />
+    <option name="totallyTimeSpent" value="14379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="2072" height="1106" extended-state="6" />
@@ -223,6 +224,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/uzduotis3/php3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uzduotis3/php3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">

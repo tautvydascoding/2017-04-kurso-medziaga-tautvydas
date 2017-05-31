@@ -1,0 +1,109 @@
+mysql> show databases; //
+
+use duomenuBazesPavadinimas;
+Database changed
+
+mysql> show tables;
+
+
+SELECT USER, PASSWORD, password_expired FROM user;
+
+ // username - pas kai kuriuos negali tureti skaiciu!!!
+ CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
+ GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
+
+ CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+// ====== naudongos kitos:
+// reset autoincreament :
+ALTER TABLE tablename AUTO_INCREMENT = 1;   // A) budas
+DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
+
+//===========pvz============
+ create TABLE IF NOT EXISTS doctors (
+      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(30) not NULL,
+      lname VARCHAR(30) NOT NULL);
+create TABLE IF NOT EXISTS pacients (
+     id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(30) not NULL,
+     lname VARCHAR(30) NOT NULL,
+     doctor_id INT(6) NOT NULL
+     );
+create TABLE IF NOT EXISTS img (
+     id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(60) not NULL,
+     doctor_id INT(6) NOT NULL
+     );
+
+// -------SQL komandos----------------------
+` - geros kabutes
+' - geros kabutes
+‘  - blogos kabutes
+
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+WHERE condition1 OR condition2 OR condition3 ...;
+WHERE NOT condition;
+WHERE CustomerName LIKE 'a%';  // PRASIDEDA "a" zodis
+ORDER BY column1, column2, ... ASC|DESC;
+ORDER BY Country ASC, CustomerName DESC;
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');
+
+
+
+
+//-------------DOCTORS----------
+INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
+INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');
+//-------------PACIENTS---------------
+INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');
+INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros', '2');
+INSERT INTO pacients  VALUES  ('', 'Ana', 'Tomson', '2');
+INSERT INTO pacients  VALUES  ('', 'Tom', 'Alis', '3');
+INSERT INTO pacients  VALUES  ('', 'Karis', 'Katis', '1');
+INSERT INTO pacients  VALUES  ('', 'Jo', 'Oporas', '5');
+//-------------IMG---------------
+INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
+INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');
+INSERT INTO img  VALUES  ('', 'pic-456.jpg', '3');
+INSERT INTO img  VALUES  ('', 'pic-4234234.GIF', '2');
+INSERT INTO img  VALUES  ('', 'pic-4622.GIF', '4');
+
+// uzduotis 1: istrinti gydytoja "Sara"
+// uzduotis 2 : Pakeisti "Timo" varda i "Tomas"
+// uzduotis 3 : visu pacientu, kurius vardas prasideda "T" -  daktarus pakeisti i "6"
+// uzduotis 4: gauti paciento "Tomo" daktaro pavarde
+
+
+
+
+
+
+
+
+
+//=====Ats.:=======
+3) sprendimas
+UPDATE pacients
+  SET doctor_id = 6
+  WHERE name like 'T%';
+
+4) sprendimas
+SELECT doctors.lname
+FROM pacients, doctors
+WHERE pacients.name = 'Tom' AND pacients.doctor_id = doctors.id;
+
+// OR
+
+SELECT doctors.lname
+FROM doctors
+INNER JOIN pacients ON pacients.doctor_id = doctors.id
+WHERE pacients.name = 'Tom' AND pacients.password = $pass;

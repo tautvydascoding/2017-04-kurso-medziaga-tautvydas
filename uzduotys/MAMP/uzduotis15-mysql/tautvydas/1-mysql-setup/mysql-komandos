@@ -1,4 +1,4 @@
-mysql> show databases; //
+﻿mysql> show databases; //
 
 use duomenuBazesPavadinimas;
 Database changed
@@ -24,13 +24,22 @@ DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
       id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(30) not NULL,
       lname VARCHAR(30) NOT NULL);
+<<<<<<< HEAD
+CREATE TABLE pacients (
+=======
 create TABLE IF NOT EXISTS pacients (
+>>>>>>> ea97882ecbae963e8cf3292712a153c1e52ae95e
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
      name VARCHAR(30) not NULL,
      lname VARCHAR(30) NOT NULL,
      doctor_id INT(6) NOT NULL
      );
+<<<<<<< HEAD
+
+CREATE TABLE img (
+=======
 create TABLE IF NOT EXISTS img (
+>>>>>>> ea97882ecbae963e8cf3292712a153c1e52ae95e
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
      name VARCHAR(60) not NULL,
      doctor_id INT(6) NOT NULL

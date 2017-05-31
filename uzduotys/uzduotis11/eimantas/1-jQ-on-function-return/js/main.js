@@ -44,7 +44,7 @@
     border: "solid 2px #69C1F1"
   };
 
-  $('h2').css(style)
+  $('h2').css(style);
 
 
   // cia rasoma pirmo kodo $(document).ready(function(){...
