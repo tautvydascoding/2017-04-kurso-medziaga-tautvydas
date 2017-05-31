@@ -1,0 +1,239 @@
+body {
+  font-size: 16px;
+  color: #FFF;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  z-index: 1;
+  color: white;
+}
+#psl-1 {
+  background: url("../img/img2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#psl-2 {
+  background: url("../img/img3.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#psl-3 {
+  background: url("../img/img6.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#psl-4 {
+  background: url("../img/img7.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.transpEffect {
+  border: none;
+  background-color: rgba(241, 241, 241, 0.2);
+}
+
+.line1 {
+  width: 40%;
+  padding-bottom: 10px;
+  border-top: solid rgba(241, 241, 241, 0.5);
+}
+
+.titleh1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(245, 245, 245, 0.8)
+}
+
+.scroll-down-arrow {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  font-size: 20px;
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.navbar ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 20px 3rem;
+  line-height: 30px;
+}
+
+.navbar ul li {
+  float: left;
+  padding-left: 6rem;
+}
+
+.navbar a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.navbar a:hover, .navbar a:focus {
+  color: #479606;
+  text-decoration: none;
+}
+
+.meniubtn {
+  background: none;
+  font-size: 30px;
+  border: none;
+  float: right;
+  margin: 8px 0;
+}
+
+.meniubtn:hover {
+  color: #479606;
+  background-color: rgba(0, 700, 0, 0.3);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #FFF;
+}
+
+.nextPageHolder {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.nextPageHolder a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nextPageHolder a:hover {
+  color: #479606;
+  text-decoration: none;
+}
+
+.content {
+  padding-top: 90px;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background: url("../img/img1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.noMarginLR {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.NoBorderRadius {
+  border-radius: 0;
+}
+
+.rotate90 {
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+  color: #FFF;
+  font-size: 32px;
+  float: right;
+  padding-right: 24px;
+}
+
+.contentLeft {
+  background-color: rgba(71, 150, 15, 0.6);
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
+  position: fixed;
+  top: 90.4px;
+  border-right: ridge #FFF  2px;
+}
+
+.itemGl {
+  border: solid;
+}
+.testas {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: black;
+}
+/* IDEA: menu btn */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #479606;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}*/
