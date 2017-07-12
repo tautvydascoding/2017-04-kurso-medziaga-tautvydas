@@ -15,7 +15,7 @@ var lastNames = ["Mcdowell", "Gates", "Mccall", "Cisneros", "Hancock", "Gaines",
 var workers = [];
 
 
-// Uzduotis:  A) paleisti cikla ir uzpuldyti "workers" masyva darbuotoju duomenimis (amzius ir pagamintu detaliu skaicius - burtu keliu)
+// Uzduotis:  A) paleisti cikla ir uzpildyti "workers" masyva darbuotoju duomenimis (amzius ir pagamintu detaliu skaicius - burtu keliu)
 
 for ( i = 0; i < names.length; i++) {
     // console.log("i: ", i);

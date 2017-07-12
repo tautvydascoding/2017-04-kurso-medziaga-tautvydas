@@ -1,15 +1,12 @@
 // =================ARRAY / masyvas==========================
 
 
-
-<<<<<<< HEAD
+console.log("labas"); 
+ 
 var masinosBagazine = ["atsarginisRatas", "kastuvas", "gesintuvas", "virve", "uzkurimoLaidai", "krokodilas"];
 
 // masinosBagazine[1] = "zvejybosKede";
-masinosBagazine.push("maistas");
-=======
-console.log("labas");
->>>>>>> 1e235b2f49c773e52039c053598eee88c8e135c1
+masinosBagazine.push("maistas"); 
 
 var kuprine = ["prozektorius", "degtukai", "peilis", 50];
 console.log(kuprine[0], kuprine[1]);

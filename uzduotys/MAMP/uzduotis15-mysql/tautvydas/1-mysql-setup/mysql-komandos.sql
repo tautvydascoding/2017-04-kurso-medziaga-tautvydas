@@ -14,7 +14,7 @@ SELECT USER, PASSWORD, password_expired FROM user;
 
  CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 
-// ====== naudongos kitos:
+// ====== naudingos kitos:
 // reset autoincreament :
 ALTER TABLE tablename AUTO_INCREMENT = 1;   // A) budas
 DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
@@ -23,23 +23,14 @@ DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
  create TABLE IF NOT EXISTS doctors (
       id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(30) not NULL,
-      lname VARCHAR(30) NOT NULL);
-<<<<<<< HEAD
-CREATE TABLE pacients (
-=======
-create TABLE IF NOT EXISTS pacients (
->>>>>>> ea97882ecbae963e8cf3292712a153c1e52ae95e
+      lname VARCHAR(30) NOT NULL); 
+create TABLE IF NOT EXISTS pacients ( 
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
      name VARCHAR(30) not NULL,
      lname VARCHAR(30) NOT NULL,
      doctor_id INT(6) NOT NULL
-     );
-<<<<<<< HEAD
-
-CREATE TABLE img (
-=======
-create TABLE IF NOT EXISTS img (
->>>>>>> ea97882ecbae963e8cf3292712a153c1e52ae95e
+     ); 
+create TABLE IF NOT EXISTS img ( 
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
      name VARCHAR(60) not NULL,
      doctor_id INT(6) NOT NULL

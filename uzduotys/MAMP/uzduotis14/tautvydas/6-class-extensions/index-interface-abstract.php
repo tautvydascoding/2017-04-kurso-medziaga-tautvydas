@@ -21,7 +21,7 @@
         public function getName() {
           return $this->name;
         }
-        // mes kalida nes Overloding neveikia PHP
+        // mes klaida nes Overloding neveikia PHP
         // public function getName($aa) {
         // }
         public function setName($text) {

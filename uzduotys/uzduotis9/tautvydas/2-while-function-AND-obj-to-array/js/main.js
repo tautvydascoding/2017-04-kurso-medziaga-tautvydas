@@ -15,7 +15,7 @@ while ( k < 20) {
   print();
   k++;
 }
-// sunkesnis varinatas, kai paduodama reiksme (jeigu niekas nepaduodama: == -1)
+// sunkesnis varinatas, f-ja spausdina skaiciiu, kai paduodama reiksme (jeigu niekas nepaduodama: spausdina "-1")
 function printNr (sk = -1) {
   console.log(sk);
 }
